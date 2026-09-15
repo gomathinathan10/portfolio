@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Gomathinathan.V">
+    <meta name="description" content="About Gomathinathan.V - Education, Experience, Principles and Skills">
+    <!-- ======== Page title ============ -->
+    <title>About Me | Gomathinathan.V - Full Stack Developer</title>
+    <!--<< Favicon >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Color.css >>-->
+    <link rel="stylesheet" href="assets/css/color.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .about-avatar-custom {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 20px;
+            object-fit: cover;
+            border: 2px solid rgba(191, 247, 71, 0.3);
+        }
+        .fact-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 16px 20px;
+            transition: all 0.3s ease;
+        }
+        .fact-card:hover {
+            border-color: #BFF747;
+            transform: translateY(-3px);
+        }
+        .brand-name-logo {
+            font-family: 'Big Shoulders Display', 'Bricolage Grotesque', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            color: #BFF747;
+            text-transform: uppercase;
+            display: inline-block;
+            line-height: 1;
+            transition: all 0.3s ease;
+        }
+        .brand-name-logo:hover {
+            color: #ffffff;
+            text-shadow: 0 0 12px rgba(191, 247, 71, 0.6);
+        }
+    </style>
+</head>
+
+<body class="body-color">
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner"></div>
+            <div class="txt-loading">
+                <span data-text-preloader="G" class="letters-loading">G</span>
+                <span data-text-preloader="O" class="letters-loading">O</span>
+                <span data-text-preloader="M" class="letters-loading">M</span>
+                <span data-text-preloader="A" class="letters-loading">A</span>
+                <span data-text-preloader="T" class="letters-loading">T</span>
+                <span data-text-preloader="H" class="letters-loading">H</span>
+                <span data-text-preloader="I" class="letters-loading">I</span>
+            </div>
+            <p class="text-center">PORTFOLIO LOADING</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back To Top Start -->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-regular fa-arrow-up"></i>
+    </button>
+
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html" class="text-decoration-none">
+                                <span class="brand-name-logo">GOMATHINATHAN.V</span>
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-xl-block">
+                        I am a Full Stack Developer & Aspiring Data Analyst based in Tirunelveli, Tamil Nadu. I develop fast, responsive web applications and build data dashboards to find valuable insights.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Tirunelveli, Tamil Nadu, India</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:gomathinathanv9@gmail.com">gomathinathanv9@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+916382988134">+91 6382988134</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="assets/resume.pdf" download class="theme-btn text-center">
+                                <span>Download Resume <i class="fa-solid fa-arrow-right-long"></i></span>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center mt-3">
+                            <a href="https://github.com/gomathinathan10" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/gomathinathan-v" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:gomathinathanv9@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:+916382988134"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-1 header-3" id="header-sticky">
+        <div class="container-fluid">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
+                    <div class="logo">
+                        <a href="index.html" class="header-logo text-decoration-none">
+                            <span class="brand-name-logo">GOMATHINATHAN.V</span>
+                        </a>
+                        <div class="logo-2">
+                            <a href="index.html" class="text-decoration-none">
+                                <span class="brand-name-logo">GOMATHINATHAN.V</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mean__menu-wrapper">
+                        <div class="main-menu style-2">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="certifications.html">Certifications</a>
+                                    </li>
+                                    <li>
+                                        <a href="news-classic.html">Articles</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact Me</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-right d-flex justify-content-end align-items-center">
+                        <a href="assets/resume.pdf" download class="theme-btn style-2">
+                            Resume <i class="fa-sharp fa-regular fa-arrow-down-to-line"></i>
+                        </a>
+                        <div class="header__hamburger d-xl-none my-auto">
+                            <div class="sidebar__toggle style-2">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb-Section Start -->
+    <section class="breadcrumb-wrapper fix bg-cover" style="background-image: url(assets/img/breadcrumb/bg.jpg);">
+        <div class="star-shape float-bob-x">
+            <img src="assets/img/shape/star.png" alt="img">
+        </div>
+        <div class="arrow-shape">
+            <img src="assets/img/breadcrumb/arrow.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="page-heading">
+                    <h2>About Me</h2>
+                    <ul class="breadcrumb-list">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="active">About Me</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Marquee Section Start -->
+    <section class="marquee-section section-bg fix py-3">
+        <div class="marquee-container">
+            <div class="marquee-wrapper">
+                <div class="marquee-content">
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>FULL STACK DEVELOPER</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>M.SC. DATA ANALYTICS</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>REACT & NODE.JS</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>PYTHON & SQL</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>GROWNOWW TECHNOLOGIES</h3>
+                    </div>
+                </div>
+                <div class="marquee-content">
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>FULL STACK DEVELOPER</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>M.SC. DATA ANALYTICS</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>REACT & NODE.JS</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>PYTHON & SQL</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>GROWNOWW TECHNOLOGIES</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section class="about-section about-3 section-padding fix">
+        <div class="container">
+            <div class="about-wrapper-3">
+                <div class="row g-4 align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="about-images position-relative">
+                            <img src="assets/profile.jpg" alt="Gomathinathan.V" class="about-avatar-custom wow img-custom-anim-left" data-wow-delay=".3s">
+                            <div class="circle-image">
+                                <div class="text-image">
+                                    <img src="assets/img/about/text.png" alt="img">
+                                    <div class="client-image">
+                                        <img src="assets/img/about/client.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-title">
+                                <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">PROFESSIONAL PROFILE</span>
+                                <h2 class="wow fadeInUp" data-wow-delay=".2s">Full Stack Developer & Data Analyst</h2>
+                                <p class="wow fadeInUp" data-wow-delay=".3s">
+                                    I am a full stack developer and data analyst from Tirunelveli, Tamil Nadu. Currently, I work at Grownoww Technologies in Tirunelveli. I develop websites and web applications that are fast, simple to use, and reliable.
+                                </p>
+                                <p class="wow fadeInUp" data-wow-delay=".4s">
+                                    I completed my Master of Science degree in Data Analytics in April 2026. Before that, I completed my Bachelor of Science degree in Computer Science in April 2024. I know how to build web applications using React, Node.js, and databases, and how to analyze data using Python and SQL.
+                                </p>
+                                <p class="wow fadeInUp" data-wow-delay=".5s">
+                                    Earlier, I completed a web development internship at Revamp Technologies where I practiced building real web projects. I enjoy writing clean code, learning new tools, and solving problems.
+                                </p>
+                            </div>
+
+                            <!-- Quick Facts Grid -->
+                            <div class="row g-3 mt-3">
+                                <div class="col-sm-6">
+                                    <div class="fact-card">
+                                        <small class="text-white-50 d-block">Current Role</small>
+                                        <strong class="text-white">Grownoww Technologies</strong>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="fact-card">
+                                        <small class="text-white-50 d-block">Internship</small>
+                                        <strong class="text-white">Revamp Technologies</strong>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="fact-card">
+                                        <small class="text-white-50 d-block">Post Graduation</small>
+                                        <strong class="text-white">M.Sc. Data Analytics (2026)</strong>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="fact-card">
+                                        <small class="text-white-50 d-block">Under Graduation</small>
+                                        <strong class="text-white">B.Sc. Computer Science (2024)</strong>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="fact-card">
+                                        <small class="text-white-50 d-block">Location</small>
+                                        <strong class="text-white">Tirunelveli, Tamil Nadu, India</strong>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="fact-card">
+                                        <small class="text-white-50 d-block">Languages Known</small>
+                                        <strong class="text-white">English & Tamil</strong>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="about-btn mt-4">
+                                <a href="contact.html" class="theme-btn">
+                                    Get In Touch <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                                <a href="assets/resume.pdf" download class="video-btn">
+                                    <span class="icon"><i class="fa-solid fa-download"></i></span>
+                                    <span class="textx">Download CV</span>
+                                </a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section Start -->
+    <section class="experience-section experience-3 section-padding section-bg fix">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">TIMELINE<img src="assets/img/icon/32.svg" alt="icon"></span>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s">Work History & Education</h2>
+            </div>
+            <div class="experience-main-wrapper">
+                <div class="content-item wow fadeInUp" data-wow-delay=".2s">
+                    <div class="head">
+                        <h4><img src="assets/img/icon/32.svg" alt="icon"> Full Stack Developer — Grownoww Technologies</h4>
+                        <span>Present (Tirunelveli, Tamil Nadu)</span>
+                    </div>
+                    <div class="text">
+                        <ul class="list">
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Building responsive web pages that look good on all devices.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Creating scalable REST APIs and connecting them to database storage.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Working with team members in Tirunelveli to build requested features on time.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Testing website functions to ensure zero errors and smooth user experience.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-item wow fadeInUp" data-wow-delay=".4s">
+                    <div class="head">
+                        <h4><img src="assets/img/icon/32.svg" alt="icon"> Full Stack Web Development Intern — Revamp Technologies</h4>
+                        <span>Internship (Tamil Nadu)</span>
+                    </div>
+                    <div class="text">
+                        <ul class="list">
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Built web components using HTML, CSS, and JavaScript.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Connected frontend screens to secure REST API endpoints.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Learned Git workflows and collaborative team programming on GitHub.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-item wow fadeInUp" data-wow-delay=".6s">
+                    <div class="head">
+                        <h4><img src="assets/img/icon/32.svg" alt="icon"> Master of Science (M.Sc.) in Data Analytics</h4>
+                        <span>Completed April 2026</span>
+                    </div>
+                    <div class="text">
+                        <ul class="list">
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Studied data analytics, statistical methods, machine learning, and data visualization.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Practiced cleaning data, finding insights, and creating visual charts using Python.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="content-item wow fadeInUp" data-wow-delay=".8s">
+                    <div class="head">
+                        <h4><img src="assets/img/icon/32.svg" alt="icon"> Bachelor of Science (B.Sc.) in Computer Science</h4>
+                        <span>Completed April 2024</span>
+                    </div>
+                    <div class="text">
+                        <ul class="list">
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Studied computer programming, data structures, algorithms, databases, and web technology.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Built foundational knowledge in computer science and software development.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Core Values Section Start -->
+    <section class="testimonial-section-2 section-padding fix">
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">DEVELOPMENT PHILOSOPHY<img src="assets/img/icon/32.svg" alt="icon"></span>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s">My Engineering Principles</h2>
+            </div>
+            <div class="testimonial-wrapper-2 mt-4">
+                <div class="swiper testimonial-slider-2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial-box-items-2 p-4 rounded-4" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                                <div class="icon mb-3">
+                                    <i class="fa-solid fa-shield-check fa-2x" style="color: #BFF747;"></i>
+                                </div>
+                                <h4 class="text-white">Reliable Websites</h4>
+                                <p class="text-white-50">
+                                    Building websites and web systems that run smoothly, load quickly, and maintain clear visual presentation across both mobile devices and desktops.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-box-items-2 p-4 rounded-4" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                                <div class="icon mb-3">
+                                    <i class="fa-solid fa-chart-pie fa-2x" style="color: #BFF747;"></i>
+                                </div>
+                                <h4 class="text-white">Helpful Data Analysis</h4>
+                                <p class="text-white-50">
+                                    Using data manipulation, statistical routines, and interactive charts to discover hidden patterns and empower confident business decisions.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-box-items-2 p-4 rounded-4" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                                <div class="icon mb-3">
+                                    <i class="fa-solid fa-code-merge fa-2x" style="color: #BFF747;"></i>
+                                </div>
+                                <h4 class="text-white">Clean & Simple Code</h4>
+                                <p class="text-white-50">
+                                    Writing modular, readable, and well-structured code that simplifies team collaboration and eases long-term maintenance and scaling.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="testimonial-box-items-2 p-4 rounded-4" style="background: rgba(255,255,255,0.03); border: 1px solid rgba(255,255,255,0.08);">
+                                <div class="icon mb-3">
+                                    <i class="fa-solid fa-lightbulb fa-2x" style="color: #BFF747;"></i>
+                                </div>
+                                <h4 class="text-white">Continuous Learning</h4>
+                                <p class="text-white-50">
+                                    Regularly mastering modern web stacks, data toolsets, and industry best practices to constantly elevate output quality.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section footer-3 fix section-bg">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="logo text-decoration-none">
+                    <span class="brand-name-logo">GOMATHINATHAN.V</span>
+                </a>
+                <div class="social-icon">
+                    <span>Connect:</span>
+                    <a href="https://github.com/gomathinathan10" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/gomathinathan-v" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:gomathinathanv9@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+916382988134"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="footer-widget-wrapper-3">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 col-md-6">
+                        <div class="single-footer-main-item">
+                            <div class="single-footer-widget">
+                                <div class="footer-newsletter">
+                                    <h3>Let's Collaborate</h3>
+                                    <p>
+                                        Ready to create a responsive web product or analyze your business data? Let's connect.
+                                    </p>
+                                    <form action="contact.html">
+                                        <div class="form-clt">
+                                            <input type="text" placeholder="Enter your email">
+                                            <button type="submit" class="theme-btn">CONNECT</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="single-footer-main-item style-2">
+                            <div class="single-footer-widget">
+                                <div class="widget-title">
+                                    <h5>NAVIGATION</h5>
+                                </div>
+                                <ul class="footer-list-2">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Me</a></li>
+                                    <li><a href="certifications.html">Certifications</a></li>
+                                    <li><a href="news-classic.html">Articles</a></li>
+                                    <li><a href="contact.html">Contact Me</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-footer-widget">
+                                <div class="widget-title">
+                                    <h5>EXPERTISE</h5>
+                                </div>
+                                <ul class="footer-list-2">
+                                    <li><a href="about.html">React & Node.js</a></li>
+                                    <li><a href="about.html">Python & Pandas</a></li>
+                                    <li><a href="about.html">SQL & Databases</a></li>
+                                    <li><a href="about.html">REST API Design</a></li>
+                                    <li><a href="about.html">Performance Optimization</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-3">
+                        <div class="single-footer-main-item">
+                            <div class="footer-contact-item">
+                                <div class="contact-items">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Location</h5>
+                                        <h6>Tirunelveli, Tamil Nadu, India</h6>
+                                    </div>
+                                </div>
+                                <div class="contact-items">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Email</h5>
+                                        <h6><a href="mailto:gomathinathanv9@gmail.com">gomathinathanv9@gmail.com</a></h6>
+                                    </div>
+                                </div>
+                                <div class="contact-items mb-0">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Phone</h5>
+                                        <h6><a href="tel:+916382988134">+91 6382988134</a></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom style-3">
+            <div class="container">
+                <div class="footer-bottom-wrapper">
+                    <p>
+                        Copyright © 2026 <strong>Gomathinathan.V</strong>. All rights reserved.
+                    </p>
+                    <ul class="footer-list">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/viewport.jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/typed.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

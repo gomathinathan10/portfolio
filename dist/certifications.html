@@ -1,0 +1,590 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--<< Header Area >>-->
+
+<head>
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Gomathinathan.V">
+    <meta name="description" content="Gomathinathan.V - Certifications, Academic Degrees, and Technical Projects">
+    <!-- ======== Page title ============ -->
+    <title>Certifications & Portfolio | Gomathinathan.V</title>
+    <!--<< Favicon >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Color.css >>-->
+    <link rel="stylesheet" href="assets/css/color.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .cert-card {
+            background: #191c26;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 20px;
+            padding: 30px;
+            height: 100%;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+        .cert-card:hover {
+            border-color: #BFF747;
+            transform: translateY(-5px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.4);
+        }
+        .cert-badge {
+            background: rgba(191, 247, 71, 0.15);
+            color: #BFF747;
+            padding: 6px 14px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 600;
+            display: inline-block;
+            margin-bottom: 16px;
+            border: 1px solid rgba(191, 247, 71, 0.3);
+        }
+        .filter-btn-group {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin-bottom: 40px;
+        }
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.05);
+            color: #fff;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            padding: 10px 24px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 500;
+        }
+        .filter-btn.active, .filter-btn:hover {
+            background: #BFF747;
+            color: #111;
+            border-color: #BFF747;
+        }
+        .brand-name-logo {
+            font-family: 'Big Shoulders Display', 'Bricolage Grotesque', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            color: #BFF747;
+            text-transform: uppercase;
+            display: inline-block;
+            line-height: 1;
+            transition: all 0.3s ease;
+        }
+        .brand-name-logo:hover {
+            color: #ffffff;
+            text-shadow: 0 0 12px rgba(191, 247, 71, 0.6);
+        }
+    </style>
+</head>
+
+<body class="body-color">
+
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner"></div>
+            <div class="txt-loading">
+                <span data-text-preloader="G" class="letters-loading">G</span>
+                <span data-text-preloader="O" class="letters-loading">O</span>
+                <span data-text-preloader="M" class="letters-loading">M</span>
+                <span data-text-preloader="A" class="letters-loading">A</span>
+                <span data-text-preloader="T" class="letters-loading">T</span>
+                <span data-text-preloader="H" class="letters-loading">H</span>
+                <span data-text-preloader="I" class="letters-loading">I</span>
+            </div>
+            <p class="text-center">PORTFOLIO LOADING</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Back To Top Start -->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-regular fa-arrow-up"></i>
+    </button>
+
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
+
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html" class="text-decoration-none">
+                                <span class="brand-name-logo">GOMATHINATHAN.V</span>
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-xl-block">
+                        I am a Full Stack Developer & Aspiring Data Analyst based in Tirunelveli, Tamil Nadu. I develop fast, responsive web applications and build data dashboards to find valuable insights.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Tirunelveli, Tamil Nadu, India</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:gomathinathanv9@gmail.com">gomathinathanv9@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+916382988134">+91 6382988134</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="assets/resume.pdf" download class="theme-btn text-center">
+                                <span>Download Resume <i class="fa-solid fa-arrow-right-long"></i></span>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center mt-3">
+                            <a href="https://github.com/gomathinathan10" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/gomathinathan-v" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:gomathinathanv9@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:+916382988134"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-1 header-3" id="header-sticky">
+        <div class="container-fluid">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
+                    <div class="logo">
+                        <a href="index.html" class="header-logo text-decoration-none">
+                            <span class="brand-name-logo">GOMATHINATHAN.V</span>
+                        </a>
+                        <div class="logo-2">
+                            <a href="index.html" class="text-decoration-none">
+                                <span class="brand-name-logo">GOMATHINATHAN.V</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mean__menu-wrapper">
+                        <div class="main-menu style-2">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li>
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li class="active">
+                                        <a href="certifications.html">Certifications</a>
+                                    </li>
+                                    <li>
+                                        <a href="news-classic.html">Articles</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact Me</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-right d-flex justify-content-end align-items-center">
+                        <a href="assets/resume.pdf" download class="theme-btn style-2">
+                            Resume <i class="fa-sharp fa-regular fa-arrow-down-to-line"></i>
+                        </a>
+                        <div class="header__hamburger d-xl-none my-auto">
+                            <div class="sidebar__toggle style-2">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb-Section Start -->
+    <section class="breadcrumb-wrapper fix bg-cover" style="background-image: url(assets/img/breadcrumb/bg.jpg);">
+        <div class="star-shape float-bob-x">
+            <img src="assets/img/shape/star.png" alt="img">
+        </div>
+        <div class="arrow-shape">
+            <img src="assets/img/breadcrumb/arrow.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="page-heading">
+                    <h2>Certifications & Portfolio</h2>
+                    <ul class="breadcrumb-list">
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
+                        <li><i class="fa-solid fa-angle-right"></i></li>
+                        <li class="active">Certifications</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Grid Section Start -->
+    <section class="project-standard-section section-padding fix section-bg">
+        <div class="container">
+            <div class="section-title text-center mb-5">
+                <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">CREDENTIALS & ACHIEVEMENTS<img src="assets/img/icon/32.svg" alt="icon"></span>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s">Certifications & Degrees</h2>
+                <p class="text-white-50 mt-2">Verified professional training, technical certifications, and academic degrees.</p>
+            </div>
+
+            <div class="row g-4 mb-5">
+                <!-- Cert 1 -->
+                <div class="col-lg-6">
+                    <div class="cert-card wow fadeInUp" data-wow-delay=".2s">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="cert-badge">Professional Certification</span>
+                            <span class="text-white-50">Year 2024</span>
+                        </div>
+                        <h3 class="text-white mb-2">Full Stack Web Development Certificate</h3>
+                        <p class="text-white-50 mb-3">Comprehensive practical training in modern frontend design and full web application development with React, Node.js, Express, and SQL.</p>
+                        <ul class="list-unstyled mb-4 text-white-50">
+                            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Credential ID: <strong>FSWD-2024</strong></li>
+                            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Issuer: Web Development Course</li>
+                        </ul>
+                        <a href="https://github.com/gomathinathan10" target="_blank" class="theme-btn py-2 px-3" style="font-size: 14px;">
+                            Verify on GitHub <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cert 2 -->
+                <div class="col-lg-6">
+                    <div class="cert-card wow fadeInUp" data-wow-delay=".4s">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="cert-badge">Data Science Training</span>
+                            <span class="text-white-50">Year 2025</span>
+                        </div>
+                        <h3 class="text-white mb-2">Data Analytics with Python Certificate</h3>
+                        <p class="text-white-50 mb-3">Practical data cleaning, statistical modeling, Exploratory Data Analysis, and interactive visualization using Python, Pandas, and NumPy.</p>
+                        <ul class="list-unstyled mb-4 text-white-50">
+                            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Credential ID: <strong>DATA-2025</strong></li>
+                            <li class="mb-2"><i class="fa-solid fa-check text-success me-2"></i> Issuer: Data Science Training</li>
+                        </ul>
+                        <a href="https://github.com/gomathinathan10" target="_blank" class="theme-btn py-2 px-3" style="font-size: 14px;">
+                            Verify on GitHub <i class="fa-solid fa-arrow-up-right-from-square ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Degree 1 -->
+                <div class="col-lg-6">
+                    <div class="cert-card wow fadeInUp" data-wow-delay=".6s">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="cert-badge">Post-Graduate Degree</span>
+                            <span class="text-white-50">April 2026</span>
+                        </div>
+                        <h3 class="text-white mb-2">Master of Science (M.Sc.) in Data Analytics</h3>
+                        <p class="text-white-50 mb-3">Advanced post-graduate coursework spanning statistical computation, machine learning principles, database querying, and business analytics.</p>
+                        <p class="text-white-50 mb-4"><i class="fa-solid fa-location-dot me-2 text-warning"></i> Tamil Nadu, India</p>
+                        <a href="about.html" class="theme-btn style-2 py-2 px-3" style="font-size: 14px;">
+                            View Details <i class="fa-solid fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Degree 2 -->
+                <div class="col-lg-6">
+                    <div class="cert-card wow fadeInUp" data-wow-delay=".8s">
+                        <div class="d-flex justify-content-between align-items-start mb-2">
+                            <span class="cert-badge">Undergraduate Degree</span>
+                            <span class="text-white-50">April 2024</span>
+                        </div>
+                        <h3 class="text-white mb-2">Bachelor of Science (B.Sc.) in Computer Science</h3>
+                        <p class="text-white-50 mb-3">Rigorous computer science curriculum including data structures, algorithmic design, object-oriented systems, and web architecture.</p>
+                        <p class="text-white-50 mb-4"><i class="fa-solid fa-location-dot me-2 text-warning"></i> Tamil Nadu, India</p>
+                        <a href="about.html" class="theme-btn style-2 py-2 px-3" style="font-size: 14px;">
+                            View Details <i class="fa-solid fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Featured Projects Portfolio Standard -->
+            <div class="section-title text-center mb-5 pt-4">
+                <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">APPLIED PROJECTS<img src="assets/img/icon/32.svg" alt="icon"></span>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s">Featured Portfolio Projects</h2>
+                <p class="text-white-50 mt-2">Explore production applications and data dashboards engineered by Gomathinathan.V</p>
+            </div>
+
+            <div class="project-standard-wrapper">
+                <div class="row g-4">
+                    <!-- Project 1 -->
+                    <div class="col-xl-7 col-md-6">
+                        <div class="project-items-2 mt-0 wow fadeInUp" data-wow-delay=".2s">
+                            <div class="images">
+                                <img src="assets/project-observability.jpg" alt="Company Web Application">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span>Full-Stack Web App</span>
+                                    <h4><a href="https://github.com/gomathinathan10" target="_blank">Company Web Application</a></h4>
+                                    <p class="text-white-50 small mt-1">React.js, Node.js, Express, MongoDB, REST APIs</p>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://github.com/gomathinathan10" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="col-xl-5 col-md-6">
+                        <div class="project-items-2 mt-md-0 wow fadeInUp" data-wow-delay=".4s">
+                            <div class="images">
+                                <img src="assets/project-fintech.jpg" alt="Data Analytics Dashboard">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span>Data Analytics</span>
+                                    <h4><a href="https://github.com/gomathinathan10" target="_blank">Data Analytics Dashboard</a></h4>
+                                    <p class="text-white-50 small mt-1">Python, Pandas, NumPy, Matplotlib, SQL</p>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://github.com/gomathinathan10" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="col-xl-5 col-md-6">
+                        <div class="project-items-2 wow fadeInUp" data-wow-delay=".6s">
+                            <div class="images">
+                                <img src="assets/project-developer-platform.jpg" alt="Client Information Portal">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span>Full-Stack Portal</span>
+                                    <h4><a href="https://github.com/gomathinathan10" target="_blank">Client Information Portal</a></h4>
+                                    <p class="text-white-50 small mt-1">JavaScript, React, Node.js, REST APIs, Git</p>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://github.com/gomathinathan10" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 (Grownoww Project) -->
+                    <div class="col-xl-7 col-md-6">
+                        <div class="project-items-2 wow fadeInUp" data-wow-delay=".8s">
+                            <div class="images">
+                                <img src="assets/project-observability.jpg" alt="Grownoww Client Solutions">
+                            </div>
+                            <div class="content">
+                                <div class="text">
+                                    <span>Commercial Engineering</span>
+                                    <h4><a href="https://github.com/gomathinathan10" target="_blank">Grownoww Client Solutions</a></h4>
+                                    <p class="text-white-50 small mt-1">Full-Stack responsive systems with database persistence</p>
+                                </div>
+                                <div class="icon">
+                                    <a href="https://github.com/gomathinathan10" target="_blank"><i class="fa-solid fa-arrow-right"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section footer-3 fix section-bg">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="logo text-decoration-none">
+                    <span class="brand-name-logo">GOMATHINATHAN.V</span>
+                </a>
+                <div class="social-icon">
+                    <span>Connect:</span>
+                    <a href="https://github.com/gomathinathan10" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/gomathinathan-v" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:gomathinathanv9@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+916382988134"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="footer-widget-wrapper-3">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 col-md-6">
+                        <div class="single-footer-main-item">
+                            <div class="single-footer-widget">
+                                <div class="footer-newsletter">
+                                    <h3>Let's Collaborate</h3>
+                                    <p>
+                                        Ready to create a responsive web product or analyze your business data? Let's connect.
+                                    </p>
+                                    <form action="contact.html">
+                                        <div class="form-clt">
+                                            <input type="text" placeholder="Enter your email">
+                                            <button type="submit" class="theme-btn">CONNECT</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="single-footer-main-item style-2">
+                            <div class="single-footer-widget">
+                                <div class="widget-title">
+                                    <h5>NAVIGATION</h5>
+                                </div>
+                                <ul class="footer-list-2">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Me</a></li>
+                                    <li><a href="certifications.html">Certifications</a></li>
+                                    <li><a href="news-classic.html">Articles</a></li>
+                                    <li><a href="contact.html">Contact Me</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-footer-widget">
+                                <div class="widget-title">
+                                    <h5>EXPERTISE</h5>
+                                </div>
+                                <ul class="footer-list-2">
+                                    <li><a href="about.html">React & Node.js</a></li>
+                                    <li><a href="about.html">Python & Pandas</a></li>
+                                    <li><a href="about.html">SQL & Databases</a></li>
+                                    <li><a href="about.html">REST API Design</a></li>
+                                    <li><a href="about.html">Performance Optimization</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-3">
+                        <div class="single-footer-main-item">
+                            <div class="footer-contact-item">
+                                <div class="contact-items">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Location</h5>
+                                        <h6>Tirunelveli, Tamil Nadu, India</h6>
+                                    </div>
+                                </div>
+                                <div class="contact-items">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Email</h5>
+                                        <h6><a href="mailto:gomathinathanv9@gmail.com">gomathinathanv9@gmail.com</a></h6>
+                                    </div>
+                                </div>
+                                <div class="contact-items mb-0">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Phone</h5>
+                                        <h6><a href="tel:+916382988134">+91 6382988134</a></h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom style-3">
+            <div class="container">
+                <div class="footer-bottom-wrapper">
+                    <p>
+                        Copyright © 2026 <strong>Gomathinathan.V</strong>. All rights reserved.
+                    </p>
+                    <ul class="footer-list">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <script src="assets/js/viewport.jquery.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <script src="assets/js/wow.min.js"></script>
+    <script src="assets/js/typed.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>

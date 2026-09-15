@@ -1,63 +1,991 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
+<!--<< Header Area >>-->
+
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-
-  <!-- Primary Meta Tags -->
-  <title>Gomathinathan.V — Full Stack Developer &amp; Aspiring Data Analyst</title>
-  <meta name="title" content="Gomathinathan.V — Full Stack Developer &amp; Aspiring Data Analyst" />
-  <meta name="description" content="Full Stack Developer and Aspiring Data Analyst based in Tirunelveli. Specialized in React, Node.js, Python, SQL, and Data Analytics." />
-  <meta name="keywords" content="Gomathinathan V, Full Stack Developer, Data Analyst, React, Node.js, Python, Tirunelveli, Tamil Nadu, Portfolio" />
-  <meta name="author" content="Gomathinathan.V" />
-  <meta name="robots" content="index, follow" />
-
-  <!-- Open Graph / Facebook / LinkedIn -->
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://github.com/gomathinathan10" />
-  <meta property="og:title" content="Gomathinathan.V — Full Stack Developer &amp; Aspiring Data Analyst" />
-  <meta property="og:description" content="Full Stack Developer currently at Grownoww Technologies &amp; M.Sc. Data Analytics graduate." />
-  <meta property="og:image" content="/assets/profile.jpg" />
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta property="twitter:title" content="Gomathinathan.V — Full Stack Developer &amp; Aspiring Data Analyst" />
-  <meta property="twitter:description" content="Full Stack Developer currently at Grownoww Technologies &amp; M.Sc. Data Analytics graduate." />
-  <meta property="twitter:image" content="/assets/profile.jpg" />
-
-
-  <script type="module" crossorigin src="/assets/index-4HwnCbky.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-lDzo8BEJ.css">
+    <!-- ========== Meta Tags ========== -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Gomathinathan.V">
+    <meta name="description" content="Gomathinathan.V - Full Stack Developer & Aspiring Data Analyst Portfolio">
+    <!-- ======== Page title ============ -->
+    <title>Gomathinathan.V | Full Stack Developer & Data Analyst</title>
+    <!--<< Favicon >>-->
+    <link rel="shortcut icon" href="assets/img/favicon.svg">
+    <!--<< Bootstrap min.css >>-->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <!--<< All Min Css >>-->
+    <link rel="stylesheet" href="assets/css/all.min.css">
+    <!--<< Animate.css >>-->
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <!--<< Magnific Popup.css >>-->
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <!--<< MeanMenu.css >>-->
+    <link rel="stylesheet" href="assets/css/meanmenu.css">
+    <!--<< Swiper Bundle.css >>-->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+    <!--<< Nice Select.css >>-->
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <!--<< Color.css >>-->
+    <link rel="stylesheet" href="assets/css/color.css">
+    <!--<< Main.css >>-->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <style>
+        .hero-img-custom {
+            width: 100%;
+            max-width: 440px;
+            border-radius: 24px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+            border: 2px solid rgba(191, 247, 71, 0.3);
+            object-fit: cover;
+        }
+        .about-avatar-custom {
+            width: 100%;
+            max-width: 480px;
+            border-radius: 20px;
+            object-fit: cover;
+            border: 2px solid rgba(255,255,255,0.1);
+        }
+        .box-2.project-card-1 {
+            background-image: url(assets/project-observability.jpg) !important;
+            background-size: cover;
+            background-position: center;
+        }
+        .box-2.project-card-2 {
+            background-image: url(assets/project-fintech.jpg) !important;
+            background-size: cover;
+            background-position: center;
+        }
+        .box-2.project-card-3 {
+            background-image: url(assets/project-developer-platform.jpg) !important;
+            background-size: cover;
+            background-position: center;
+        }
+        .tech-badge {
+            display: inline-block;
+            background: rgba(191, 247, 71, 0.12);
+            color: #BFF747;
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            margin: 2px;
+            border: 1px solid rgba(191, 247, 71, 0.3);
+        }
+        .brand-name-logo {
+            font-family: 'Big Shoulders Display', 'Bricolage Grotesque', sans-serif;
+            font-size: 28px;
+            font-weight: 800;
+            letter-spacing: 1.5px;
+            color: #BFF747;
+            text-transform: uppercase;
+            display: inline-block;
+            line-height: 1;
+            transition: all 0.3s ease;
+        }
+        .brand-name-logo:hover {
+            color: #ffffff;
+            text-shadow: 0 0 12px rgba(191, 247, 71, 0.6);
+        }
+    </style>
 </head>
-<body>
-  <!-- Header Mount Point -->
-  <div id="siteHeaderContainer"></div>
 
-  <!-- Main Content Mount Points -->
-  <main id="mainContent">
-    <div id="heroContainer"></div>
-    <div id="aboutContainer"></div>
-    <div id="skillsContainer"></div>
-    <div id="experienceContainer"></div>
-    <div id="educationContainer"></div>
-    <div id="projectsContainer"></div>
-    <div id="servicesContainer"></div>
-    <div id="contactContainer"></div>
-  </main>
+<body class="body-color">
 
-  <!-- Footer Mount Point -->
-  <div id="siteFooterContainer"></div>
+    <!-- Preloader Start -->
+    <div id="preloader" class="preloader">
+        <div class="animation-preloader">
+            <div class="spinner"></div>
+            <div class="txt-loading">
+                <span data-text-preloader="G" class="letters-loading">G</span>
+                <span data-text-preloader="O" class="letters-loading">O</span>
+                <span data-text-preloader="M" class="letters-loading">M</span>
+                <span data-text-preloader="A" class="letters-loading">A</span>
+                <span data-text-preloader="T" class="letters-loading">T</span>
+                <span data-text-preloader="H" class="letters-loading">H</span>
+                <span data-text-preloader="I" class="letters-loading">I</span>
+            </div>
+            <p class="text-center">PORTFOLIO LOADING</p>
+        </div>
+        <div class="loader">
+            <div class="row">
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-left">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+                <div class="col-3 loader-section section-right">
+                    <div class="bg"></div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-  <!-- Floating Config Customizer Drawer Mount Point -->
-  <div id="customizerDrawerContainer"></div>
+    <!-- Back To Top Start -->
+    <button id="back-top" class="back-to-top">
+        <i class="fa-regular fa-arrow-up"></i>
+    </button>
 
-  <!-- Toast Notification -->
-  <div id="toastNotification" class="toast-notification toast-success" role="status" aria-live="polite">
-    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="color: var(--accent-emerald); flex-shrink: 0;"><polyline points="20 6 9 17 4 12"></polyline></svg>
-    <span id="toastMessageText">Message received!</span>
-  </div>
+    <!--<< Mouse Cursor Start >>-->
+    <div class="mouse-cursor cursor-outer"></div>
+    <div class="mouse-cursor cursor-inner"></div>
 
-  <!-- Main Application Script -->
+    <!-- Offcanvas Area Start -->
+    <div class="fix-area">
+        <div class="offcanvas__info">
+            <div class="offcanvas__wrapper">
+                <div class="offcanvas__content">
+                    <div class="offcanvas__top mb-5 d-flex justify-content-between align-items-center">
+                        <div class="offcanvas__logo">
+                            <a href="index.html" class="text-decoration-none">
+                                <span class="brand-name-logo">GOMATHINATHAN.V</span>
+                            </a>
+                        </div>
+                        <div class="offcanvas__close">
+                            <button>
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <p class="text d-none d-xl-block">
+                        I am a Full Stack Developer & Aspiring Data Analyst based in Tirunelveli, Tamil Nadu. I develop fast, responsive web applications and build data dashboards to find valuable insights.
+                    </p>
+                    <div class="mobile-menu fix mb-3"></div>
+                    <div class="offcanvas__contact">
+                        <h4>Contact Info</h4>
+                        <ul>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon">
+                                    <i class="fal fa-map-marker-alt"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a target="_blank" href="#">Tirunelveli, Tamil Nadu, India</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-envelope"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="mailto:gomathinathanv9@gmail.com">gomathinathanv9@gmail.com</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-phone"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <a href="tel:+916382988134">+91 6382988134</a>
+                                </div>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <div class="offcanvas__contact-icon mr-15">
+                                    <i class="fal fa-clock"></i>
+                                </div>
+                                <div class="offcanvas__contact-text">
+                                    <span>Available for Full-Time Roles & Projects</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header-button mt-4">
+                            <a href="assets/resume.pdf" download class="theme-btn text-center">
+                                <span>Download Resume <i class="fa-solid fa-arrow-right-long"></i></span>
+                            </a>
+                        </div>
+                        <div class="social-icon d-flex align-items-center mt-3">
+                            <a href="https://github.com/gomathinathan10" target="_blank"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/gomathinathan-v" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="mailto:gomathinathanv9@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="tel:+916382988134"><i class="fas fa-phone"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="offcanvas__overlay"></div>
+
+    <!-- Header Section Start -->
+    <header class="header-1 header-3" id="header-sticky">
+        <div class="container-fluid">
+            <div class="mega-menu-wrapper">
+                <div class="header-main">
+                    <div class="logo">
+                        <a href="index.html" class="header-logo text-decoration-none">
+                            <span class="brand-name-logo">GOMATHINATHAN.V</span>
+                        </a>
+                        <div class="logo-2">
+                            <a href="index.html" class="text-decoration-none">
+                                <span class="brand-name-logo">GOMATHINATHAN.V</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="mean__menu-wrapper">
+                        <div class="main-menu style-2">
+                            <nav id="mobile-menu">
+                                <ul>
+                                    <li class="active">
+                                        <a href="index.html">Home</a>
+                                    </li>
+                                    <li>
+                                        <a href="about.html">About</a>
+                                    </li>
+                                    <li>
+                                        <a href="certifications.html">Certifications</a>
+                                    </li>
+                                    <li>
+                                        <a href="news-classic.html">Articles</a>
+                                    </li>
+                                    <li>
+                                        <a href="contact.html">Contact Me</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="header-right d-flex justify-content-end align-items-center">
+                        <a href="#0" class="search-trigger search-icon">
+                            <i class="fa-regular fa-magnifying-glass"></i>
+                        </a>
+                        <a href="assets/resume.pdf" download class="theme-btn style-2">
+                            Resume <i class="fa-sharp fa-regular fa-arrow-down-to-line"></i>
+                        </a>
+                        <div class="header__hamburger d-xl-none my-auto">
+                            <div class="sidebar__toggle style-2">
+                                <i class="fas fa-bars"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Search Area Start -->
+    <div class="search-wrap">
+        <div class="search-inner">
+            <i class="fas fa-times search-close" id="search-close"></i>
+            <div class="search-cell">
+                <form method="get" onsubmit="event.preventDefault();">
+                    <div class="search-field-holder">
+                        <input type="search" class="main-search-input" placeholder="Search skills, projects, certifications...">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Hero Section Start -->
+    <section class="hero-section hero-3 bg-cover fix" style="background-image: url(assets/img/hero/bg-3.jpg);">
+        <div class="balance-shape float-bob-x">
+            <img src="assets/img/shape/balance.png" alt="shape">
+        </div>
+        <div class="ruler-shape float-bob-y">
+            <img src="assets/img/shape/rules-coler-2.png" alt="shape">
+        </div>
+        <div class="random-shape float-bob-y">
+            <img src="assets/img/shape/random-shape-2.png" alt="random-shape">
+        </div>
+
+        <div class="hero-info">
+            <a href="https://github.com/gomathinathan10" target="_blank" class="active">GitHub</a>
+            <a href="https://linkedin.com/in/gomathinathan-v" target="_blank">LinkedIn</a>
+            <a href="mailto:gomathinathanv9@gmail.com">Email</a>
+            <a href="tel:+916382988134">Phone</a>
+        </div>
+        <div class="container-fluid">
+            <div class="row g-4 align-items-center">
+                <div class="col-lg-7">
+                    <div class="hero-content-wrapper">
+                        <span class="wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">FULL STACK DEVELOPER & DATA ANALYST</span>
+                        <h1 class="wow fadeInUp" data-wow-delay=".2s">
+                            Hi, I'm Gomathinathan.V <br>
+                            <span class="type-text"></span>
+                        </h1>
+                        <p class="wow fadeInUp" data-wow-delay=".3s">
+                            I build responsive web applications with React & Node.js, and analyze data using Python & SQL to uncover actionable insights. Currently developing client web solutions at Grownoww Technologies in Tirunelveli.
+                        </p>
+                        <div class="d-flex flex-wrap gap-3 align-items-center">
+                            <a href="contact.html" class="theme-btn wow fadeInUp" data-wow-delay=".4s">
+                                Hire Me Now <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+                            <a href="certifications.html" class="theme-btn style-2 wow fadeInUp" data-wow-delay=".5s">
+                                View Certifications <i class="fa-solid fa-award"></i>
+                            </a>
+                        </div>
+
+                        <!-- Stats Strip -->
+                        <div class="row g-3 mt-4 pt-2">
+                            <div class="col-sm-6 col-md-3">
+                                <div class="counter-item">
+                                    <h3 class="text-white">Full Stack</h3>
+                                    <p class="text-white-50 small mb-0">React, Node & SQL</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="counter-item">
+                                    <h3 class="text-white">M.Sc.</h3>
+                                    <p class="text-white-50 small mb-0">Data Analytics (2026)</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="counter-item">
+                                    <h3 class="text-white">Grownoww</h3>
+                                    <p class="text-white-50 small mb-0">Current Developer</p>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 col-md-3">
+                                <div class="counter-item">
+                                    <h3 class="text-white">Revamp</h3>
+                                    <p class="text-white-50 small mb-0">Web Internship</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="hero-image text-center position-relative">
+                        <img src="assets/gomathinathan.jpg" alt="Gomathinathan.V" class="hero-img-custom wow img-custom-anim-top" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                        <div class="bg-shape">
+                            <img src="assets/img/hero/blur.png" alt="img" class="wow img-custom-anim-right" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feature Section Start -->
+    <section class="feature-section-2">
+        <div class="container">
+            <div class="feature-wrapper">
+                <div class="row g-3">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item wow fadeInUp" data-wow-delay=".3s">
+                            <div class="icon">
+                                <img src="assets/img/icon/33.svg" alt="icon">
+                            </div>
+                            <div class="content">
+                                <h4><a href="about.html">Web Development</a></h4>
+                                <p>Building fast, responsive web apps using React, Node.js, Express, and modern CSS.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item wow fadeInUp" data-wow-delay=".6s">
+                            <div class="icon">
+                                <img src="assets/img/icon/34.svg" alt="icon">
+                            </div>
+                            <div class="content">
+                                <h4><a href="certifications.html">Data Analytics</a></h4>
+                                <p>Analyzing data, extracting patterns, and building charts with Python, Pandas, & SQL.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6">
+                        <div class="feature-item wow fadeInUp" data-wow-delay=".9s">
+                            <div class="icon">
+                                <img src="assets/img/icon/35.svg" alt="icon">
+                            </div>
+                            <div class="content">
+                                <h4><a href="contact.html">Reliable Performance</a></h4>
+                                <p>Optimizing websites for seamless performance across mobile, tablet, and desktop.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section Start -->
+    <section class="about-section about-3 section-padding fix">
+        <div class="order-shape float-bob-y">
+            <img src="assets/img/shape/scale-orders.png" alt="shape">
+        </div>
+        <div class="scales-shape float-bob-x">
+            <img src="assets/img/shape/Scales-2.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="about-wrapper-3">
+                <div class="row g-3 align-items-center justify-content-between">
+                    <div class="col-lg-6">
+                        <div class="about-images position-relative">
+                            <img src="assets/profile.jpg" alt="Gomathinathan" class="about-avatar-custom wow img-custom-anim-left" data-wow-delay=".3s">
+                            <div class="circle-image">
+                                <div class="text-image">
+                                    <img src="assets/img/about/text.png" alt="img">
+                                    <div class="client-image">
+                                        <img src="assets/img/about/client.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="about-content">
+                            <div class="section-title">
+                                <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">About Me</span>
+                                <h2 class="wow fadeInUp" data-wow-delay=".2s">Crafting Code & Solving Data Challenges</h2>
+                                <p class="wow fadeInUp" data-wow-delay=".3s">
+                                    I am a full stack developer and data analyst from Tirunelveli, Tamil Nadu. Currently, I work at Grownoww Technologies developing fast, reliable websites and web applications.
+                                </p>
+                            </div>
+                            <div class="text wow fadeInUp" data-wow-delay=".5s">
+                                <div class="icon">
+                                    <img src="assets/img/icon/36.svg" alt="icon">
+                                </div>
+                                <p>
+                                    I hold an M.Sc. in Data Analytics (April 2026) and a B.Sc. in Computer Science (April 2024), combining software engineering precision with deep statistical data insight.
+                                </p>
+                            </div>
+                            <div class="items">
+                                <div class="item wow fadeInUp" data-wow-delay=".3s">
+                                    <div class="icon">
+                                        <img src="assets/img/icon/37.svg" alt="icon">
+                                    </div>
+                                    <h6>Full-Stack Web Engineering</h6>
+                                </div>
+                                <div class="item wow fadeInUp" data-wow-delay=".6s">
+                                    <div class="icon">
+                                        <img src="assets/img/icon/38.svg" alt="icon">
+                                    </div>
+                                    <h6>Python & SQL Data Analytics</h6>
+                                </div>
+                            </div>
+                            <div class="about-btn">
+                                <a href="about.html" class="theme-btn">Learn More
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+                                <a href="assets/resume.pdf" download class="video-btn">
+                                    <span class="icon"><i class="fa-solid fa-file-arrow-down"></i></span>
+                                    <span class="textx">View Resume</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Section Start -->
+    <section class="service-section service-3 section-padding section-bg fix">
+        <div class="random-shape float-bob-x">
+            <img src="assets/img/shape/random-shape-3.png" alt="shape">
+        </div>
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">SERVICES<img src="assets/img/icon/32.svg" alt="icon"></span>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s">What I Can Do For You</h2>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay=".3s">
+                        <div class="icon">
+                            <img src="assets/img/icon/39.svg" alt="Web Dev">
+                        </div>
+                        <div class="content">
+                            <h4><a href="about.html">Full-Stack Development</a></h4>
+                            <p>Building responsive web applications using React.js, Node.js, Express, REST APIs, and database integration.</p>
+                        </div>
+                        <a href="about.html" class="theme-btn">
+                            Explore More <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay=".6s">
+                        <div class="icon">
+                            <img src="assets/img/icon/40.svg" alt="Data Analytics">
+                        </div>
+                        <div class="content">
+                            <h4><a href="certifications.html">Data Analytics & Insights</a></h4>
+                            <p>Cleaning raw datasets, analyzing trends, writing SQL queries, and creating clear graphs using Python & Pandas.</p>
+                        </div>
+                        <a href="certifications.html" class="theme-btn">
+                            Explore More <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay=".9s">
+                        <div class="icon">
+                            <img src="assets/img/icon/41.svg" alt="Website Improvement">
+                        </div>
+                        <div class="content">
+                            <h4><a href="contact.html">Website Improvement</a></h4>
+                            <p>Upgrading existing websites to load faster, improve mobile responsiveness, and enhance overall user experience.</p>
+                        </div>
+                        <a href="contact.html" class="theme-btn">
+                            Explore More <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center mt-5">
+                <span class="wow fadeInUp" data-wow-delay=".3s">
+                    Looking for a dedicated developer or analyst? <a href="contact.html" class="text-decoration-underline" style="color: #BFF747;">Get In Touch</a>
+                </span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client / Skills Marquee Section Start -->
+    <section class="marquee-section section-bg fix py-4 border-top border-bottom border-secondary border-opacity-25">
+        <div class="marquee-container">
+            <div class="marquee-wrapper">
+                <div class="marquee-content">
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>REACT.JS</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>NODE.JS & EXPRESS</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>PYTHON & PANDAS</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>SQL & POSTGRESQL</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>MONGODB</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>JAVASCRIPT & TYPESCRIPT</h3>
+                    </div>
+                </div>
+                <div class="marquee-content">
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>REACT.JS</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>NODE.JS & EXPRESS</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>PYTHON & PANDAS</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>SQL & POSTGRESQL</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>MONGODB</h3>
+                    </div>
+                    <div class="marquee-text">
+                        <img src="assets/img/star/star-2.png" alt="img">
+                        <h3>JAVASCRIPT & TYPESCRIPT</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Section Start -->
+    <section class="project-section project-3 section-padding section-bg fix">
+        <div class="scale-shape float-bob-x">
+            <img src="assets/img/shape/Scales-3.png" alt="img">
+        </div>
+        <div class="regulation-shape float-bob-y">
+            <img src="assets/img/shape/regulation.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="section-title-area">
+                <div class="section-title">
+                    <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">FEATURED WORK</span>
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">My Recent Working Projects</h2>
+                </div>
+                <a href="certifications.html" class="theme-btn">
+                    View All Projects & Credentials
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="project-wrapper-3">
+                <div class="main-box">
+                    <div class="box-2 project-card-1 active wow fadeInUp">
+                        <div class="project-content">
+                            <div class="text">
+                                <span>Full-Stack Web App</span>
+                                <h4><a href="https://github.com/gomathinathan10" target="_blank">Company Web Application</a></h4>
+                                <p class="text-white-50 small mb-2">React.js, Node.js, Express, MongoDB</p>
+                            </div>
+                            <a href="https://github.com/gomathinathan10" target="_blank" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="box-2 project-card-2 wow fadeInUp" data-wow-delay=".2s">
+                        <div class="project-content">
+                            <div class="text">
+                                <span>Data Analytics</span>
+                                <h4><a href="https://github.com/gomathinathan10" target="_blank">Data Analytics Dashboard</a></h4>
+                                <p class="text-white-50 small mb-2">Python, Pandas, NumPy, SQL</p>
+                            </div>
+                            <a href="https://github.com/gomathinathan10" target="_blank" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                    <div class="box-2 project-card-3 wow fadeInUp" data-wow-delay=".4s">
+                        <div class="project-content">
+                            <div class="text">
+                                <span>Internship Project</span>
+                                <h4><a href="https://github.com/gomathinathan10" target="_blank">Client Information Portal</a></h4>
+                                <p class="text-white-50 small mb-2">JavaScript, React, REST APIs, Git</p>
+                            </div>
+                            <a href="https://github.com/gomathinathan10" target="_blank" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section Start -->
+    <section class="experience-section experience-3 section-padding fix">
+        <div class="random-shape float-bob-x">
+            <img src="assets/img/shape/star-5.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">CAREER & EDUCATION<img src="assets/img/icon/32.svg" alt="icon"></span>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s">Experience & Academic Background</h2>
+            </div>
+            <div class="experience-main-wrapper">
+                <div class="content-item wow fadeInUp" data-wow-delay=".3s">
+                    <div class="head">
+                        <h4><img src="assets/img/icon/32.svg" alt="icon"> Full Stack Developer — Grownoww Technologies</h4>
+                        <span>Present (Tirunelveli, Tamil Nadu)</span>
+                    </div>
+                    <div class="text">
+                        <ul class="list">
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Building responsive web applications with React.js, Node.js, and Express.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Developing secure REST APIs connected to database storage and ensuring reliable performance.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Collaborating with the team to deliver feature updates on time and maintaining clean, tested code.</li>
+                        </ul>
+                        <div class="logo">
+                            <img src="assets/img/project/12.png" alt="Grownoww">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-item wow fadeInUp" data-wow-delay=".5s">
+                    <div class="head">
+                        <h4><img src="assets/img/icon/32.svg" alt="icon"> Web Development Intern — Revamp Technologies</h4>
+                        <span>Internship Period (Tamil Nadu)</span>
+                    </div>
+                    <div class="text">
+                        <ul class="list">
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Developed dynamic user interfaces using HTML, CSS, JavaScript, and React.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Connected frontend components to REST APIs and practiced Git version control workflows.</li>
+                        </ul>
+                        <div class="logo">
+                            <img src="assets/img/project/13.png" alt="Revamp">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-item wow fadeInUp" data-wow-delay=".7s">
+                    <div class="head">
+                        <h4><img src="assets/img/icon/32.svg" alt="icon"> M.Sc. in Data Analytics</h4>
+                        <span>Completed April 2026 (Post Graduate)</span>
+                    </div>
+                    <div class="text">
+                        <ul class="list">
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Specialized in exploratory data analysis, statistical modeling, machine learning basics, and visual dashboards.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Hands-on project work analyzing datasets with Python, Pandas, Matplotlib, and SQL.</li>
+                        </ul>
+                        <div class="logo">
+                            <img src="assets/img/project/14.png" alt="Degree">
+                        </div>
+                    </div>
+                </div>
+                <div class="content-item wow fadeInUp" data-wow-delay=".9s">
+                    <div class="head">
+                        <h4><img src="assets/img/icon/32.svg" alt="icon"> B.Sc. in Computer Science</h4>
+                        <span>Completed April 2024 (Undergraduate)</span>
+                    </div>
+                    <div class="text">
+                        <ul class="list">
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Comprehensive foundation in computer algorithms, data structures, database design, and software engineering principles.</li>
+                        </ul>
+                        <div class="logo">
+                            <img src="assets/img/project/12.png" alt="Degree">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Recommendations Section Start -->
+    <section class="testimonial-section-3 section-padding fix section-bg">
+        <div class="scale-shape float-bob-x">
+            <img src="assets/img/shape/Scales.png" alt="img">
+        </div>
+        <div class="regulation-shape float-bob-y">
+            <img src="assets/img/shape/scale-orders-2.png" alt="img">
+        </div>
+        <div class="container">
+            <div class="section-title text-center">
+                <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">CORE PRINCIPLES<img src="assets/img/icon/32.svg" alt="icon"></span>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s">How I Work & Build</h2>
+            </div>
+            <div class="row g-4 mt-2">
+                <div class="col-lg-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay=".3s">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-laptop-code fa-2x" style="color: #BFF747;"></i>
+                        </div>
+                        <h4>Reliable & Fast Websites</h4>
+                        <p>Building websites and web applications that run smoothly, load quickly, and provide an effortless user experience across mobile phones, tablets, and laptops.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay=".5s">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-chart-line fa-2x" style="color: #BFF747;"></i>
+                        </div>
+                        <h4>Helpful Data Analysis</h4>
+                        <p>Leveraging Python and SQL to uncover patterns in raw data and convert complex numbers into actionable charts that empower informed decision-making.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay=".7s">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-code fa-2x" style="color: #BFF747;"></i>
+                        </div>
+                        <h4>Clean & Maintainable Code</h4>
+                        <p>Writing organized, self-documenting code that is easy for engineering teams to understand, test, expand, and maintain over long lifecycles.</p>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="service-item wow fadeInUp" data-wow-delay=".9s">
+                        <div class="icon mb-3">
+                            <i class="fa-solid fa-graduation-cap fa-2x" style="color: #BFF747;"></i>
+                        </div>
+                        <h4>Continuous Learning</h4>
+                        <p>Actively practicing modern programming patterns, exploring evolving frameworks, and adapting to industry standards to deliver cutting-edge solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section Start -->
+    <section class="news-section-3 section-padding fix">
+        <div class="container">
+            <div class="section-title-area">
+                <div class="section-title">
+                    <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">TECH INSIGHTS</span>
+                    <h2 class="wow fadeInUp" data-wow-delay=".2s">Recent Articles & Technical Write-ups</h2>
+                </div>
+                <a href="news-classic.html" class="theme-btn">
+                    View All Articles
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6">
+                    <div class="news-item-3 wow fadeInUp" data-wow-delay=".3s">
+                        <div class="content">
+                            <ul class="news-meta">
+                                <li>Full-Stack</li>
+                                <li class="date"><span></span>Web Dev</li>
+                            </ul>
+                            <h4><a href="news-classic.html">Building Scalable Web Applications with React.js & Node.js</a></h4>
+                        </div>
+                        <div class="thumb">
+                            <img src="assets/img/news/24.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="news-item-3 wow fadeInUp" data-wow-delay=".6s">
+                        <div class="content">
+                            <ul class="news-meta">
+                                <li>Data Analytics</li>
+                                <li class="date"><span></span>Python & SQL</li>
+                            </ul>
+                            <h4><a href="news-classic.html">Uncovering Business Insights with Exploratory Data Analysis</a></h4>
+                        </div>
+                        <div class="thumb">
+                            <img src="assets/img/news/25.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="news-item-3 wow fadeInUp" data-wow-delay=".9s">
+                        <div class="content">
+                            <ul class="news-meta">
+                                <li>Architecture</li>
+                                <li class="date"><span></span>REST APIs</li>
+                            </ul>
+                            <h4><a href="news-classic.html">Designing High-Efficiency REST APIs & Database Schemas</a></h4>
+                        </div>
+                        <div class="thumb">
+                            <img src="assets/img/news/26.jpg" alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section Start -->
+    <footer class="footer-section footer-3 fix section-bg">
+        <div class="container">
+            <div class="footer-top">
+                <a href="index.html" class="logo text-decoration-none">
+                    <span class="brand-name-logo">GOMATHINATHAN.V</span>
+                </a>
+                <div class="social-icon">
+                    <span>Connect:</span>
+                    <a href="https://github.com/gomathinathan10" target="_blank"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://linkedin.com/in/gomathinathan-v" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="mailto:gomathinathanv9@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="tel:+916382988134"><i class="fa-solid fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="footer-widget-wrapper-3">
+                <div class="row">
+                    <div class="col-xl-4 col-lg-5 col-md-6">
+                        <div class="single-footer-main-item">
+                            <div class="single-footer-widget">
+                                <div class="footer-newsletter">
+                                    <h3>Let's Collaborate</h3>
+                                    <p>
+                                        Looking for a developer to build your web product or an analyst to make sense of your data? Reach out today.
+                                    </p>
+                                    <form action="contact.html">
+                                        <div class="form-clt">
+                                            <input type="text" placeholder="Enter your email">
+                                            <button type="submit" class="theme-btn">
+                                                CONNECT
+                                            </button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-md-6 col-lg-4">
+                        <div class="single-footer-main-item style-2">
+                            <div class="single-footer-widget">
+                                <div class="widget-title">
+                                    <h5>NAVIGATION</h5>
+                                </div>
+                                <ul class="footer-list-2">
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="about.html">About Me</a></li>
+                                    <li><a href="certifications.html">Certifications</a></li>
+                                    <li><a href="news-classic.html">Articles</a></li>
+                                    <li><a href="contact.html">Contact Me</a></li>
+                                </ul>
+                            </div>
+                            <div class="single-footer-widget">
+                                <div class="widget-title">
+                                    <h5>EXPERTISE</h5>
+                                </div>
+                                <ul class="footer-list-2">
+                                    <li><a href="about.html">React & Node.js</a></li>
+                                    <li><a href="about.html">Python & Pandas</a></li>
+                                    <li><a href="about.html">SQL & Databases</a></li>
+                                    <li><a href="about.html">REST API Design</a></li>
+                                    <li><a href="about.html">Performance Optimization</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-3">
+                        <div class="single-footer-main-item">
+                            <div class="footer-contact-item">
+                                <div class="contact-items">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Location</h5>
+                                        <h6>Tirunelveli, Tamil Nadu, India</h6>
+                                    </div>
+                                </div>
+                                <div class="contact-items">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Email</h5>
+                                        <h6>
+                                            <a href="mailto:gomathinathanv9@gmail.com">gomathinathanv9@gmail.com</a>
+                                        </h6>
+                                    </div>
+                                </div>
+                                <div class="contact-items mb-0">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div class="content">
+                                        <h5>Phone</h5>
+                                        <h6>
+                                            <a href="tel:+916382988134">+91 6382988134</a>
+                                        </h6>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom style-3">
+            <div class="container">
+                <div class="footer-bottom-wrapper">
+                    <p>
+                        Copyright © <span id="current-year">2026</span> <strong>Gomathinathan.V</strong>. All rights reserved.
+                    </p>
+                    <ul class="footer-list">
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="certifications.html">Certifications</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--<< All JS Plugins >>-->
+    <script src="assets/js/jquery-3.7.1.min.js"></script>
+    <!--<< Viewport Js >>-->
+    <script src="assets/js/viewport.jquery.js"></script>
+    <!--<< Bootstrap Js >>-->
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <!--<< Nice Select Js >>-->
+    <script src="assets/js/jquery.nice-select.min.js"></script>
+    <!--<< Waypoints Js >>-->
+    <script src="assets/js/jquery.waypoints.js"></script>
+    <!--<< Counterup Js >>-->
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <!--<< Swiper Slider Js >>-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--<< MeanMenu Js >>-->
+    <script src="assets/js/jquery.meanmenu.min.js"></script>
+    <!--<< Magnific Popup Js >>-->
+    <script src="assets/js/jquery.magnific-popup.min.js"></script>
+    <!--<< Wow Animation Js >>-->
+    <script src="assets/js/wow.min.js"></script>
+    <!--<< Typed Js >>-->
+    <script src="assets/js/typed.min.js"></script>
+    <!--<< Main.js >>-->
+    <script src="assets/js/main.js"></script>
 </body>
+
 </html>
