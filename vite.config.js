@@ -17,7 +17,8 @@ export default defineConfig({
         about: resolve(__dirname, 'about.html'),
         certifications: resolve(__dirname, 'certifications.html'),
         news: resolve(__dirname, 'news-classic.html'),
-        contact: resolve(__dirname, 'contact.html')
+        contact: resolve(__dirname, 'contact.html'),
+        notFound: resolve(__dirname, '404.html')
       }
     }
   }

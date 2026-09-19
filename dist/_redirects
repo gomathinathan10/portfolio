@@ -1,0 +1,8 @@
+# Netlify Redirects file
+/home            /                   301
+/about           /about.html         200
+/certifications  /certifications.html 200
+/articles        /news-classic.html  200
+/news            /news-classic.html  200
+/contact         /contact.html       200
+/*               /404.html           404

@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+
+# Production build directory (if not committing pre-built)
+# dist/
+
+# Netlify local dev & build artifacts
+.netlify/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Environment variables
+.env
+.env.local
+.env.*.local

@@ -1,0 +1,61 @@
+# Netlify Configuration File
+# Documentation: https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Routing rules for pretty URLs
+[[redirects]]
+  from = "/home"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  from = "/about"
+  to = "/about.html"
+  status = 200
+
+[[redirects]]
+  from = "/certifications"
+  to = "/certifications.html"
+  status = 200
+
+[[redirects]]
+  from = "/articles"
+  to = "/news-classic.html"
+  status = 200
+
+[[redirects]]
+  from = "/news"
+  to = "/news-classic.html"
+  status = 200
+
+[[redirects]]
+  from = "/contact"
+  to = "/contact.html"
+  status = 200
+
+# 404 Fallback page
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404
+
+# Cache static assets for 1 year
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Security headers across all pages
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
