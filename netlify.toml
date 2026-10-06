@@ -25,8 +25,18 @@
   status = 200
 
 [[redirects]]
+  from = "/portfolio"
+  to = "/portfolio.html"
+  status = 200
+
+[[redirects]]
+  from = "/projects"
+  to = "/portfolio.html"
+  status = 200
+
+[[redirects]]
   from = "/articles"
-  to = "/news-classic.html"
+  to = "/portfolio.html"
   status = 200
 
 [[redirects]]

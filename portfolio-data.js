@@ -3,8 +3,8 @@
  * CENTRALIZED PORTFOLIO CONFIGURATION & CONTENT DATA
  * =============================================================================
  * 
- * Edit this file to update your portfolio.
- * Everything on the website automatically updates from here.
+ * Centralized data source for Gomathinathan.V portfolio.
+ * Automatically synchronizes personal profile, projects, education & contact details.
  */
 
 export const portfolioData = {
@@ -12,40 +12,39 @@ export const portfolioData = {
   // 1. PERSONAL INFORMATION
   // ===========================================================================
   personal: {
-    name: "Gomathinathan.V",
+    name: "GOMATHINATHAN.V",
     initials: "GV",
-    title: "Full Stack Developer & Aspiring Data Analyst",
-    tagline: "I build responsive web applications and analyze data to find helpful insights.",
-    avatar: "./assets/profile.jpg",
+    title: "Aspiring Data Analyst | M.Sc. Data Analytics",
+    tagline: "Motivated and Postgraduated in M.Sc seeking a job to apply my knowledge of handling data, analytical skills, communication abilities and knowledge to support company projects. Eager to contribute to data driven insights and grow professionally while adding value to the organization.",
+    avatar: "./assets/gomathinathan.png",
     resumeUrl: "./assets/resume.pdf",
-    location: "Tirunelveli, Tamil Nadu, India",
-    relocation: "Open to Remote and On-Site Work",
+    location: "73, VVK Street, Pettai, Tirunelveli, Tamil Nadu",
+    relocation: "Open to Remote and On-Site Opportunities",
     availability: {
-      status: "Available for Work",
-      type: "Full-Time Roles & Projects",
+      status: "Actively Seeking Opportunities",
+      type: "Data Analyst & Developer Roles",
       badgeColor: "success"
     },
-    // Main highlights shown under the introduction
     stats: [
       {
-        value: "Full Stack",
-        label: "Web Development",
-        helper: "React, Node.js, Express & SQL"
+        value: "8.5 CGPA",
+        label: "M.Sc. Data Analytics",
+        helper: "Manonmaniam Sundaranar University (2024-2026)"
       },
       {
-        value: "M.Sc.",
-        label: "Data Analytics",
-        helper: "Completed in April 2026"
+        value: "6.8 CGPA",
+        label: "B.Sc. Computer Science",
+        helper: "The MDT Hindu College (2021-2024)"
       },
       {
-        value: "Grownoww",
-        label: "Current Work",
-        helper: "Technologies in Tirunelveli"
+        value: "3+",
+        label: "Certifications",
+        helper: "Simplilearn (ML & AI) & NPTEL (NLP)"
       },
       {
-        value: "Revamp",
-        label: "Internship",
-        helper: "Web development training"
+        value: "4+",
+        label: "Key Projects",
+        helper: "ML, NLP, Computer Vision & Power BI"
       }
     ]
   },
@@ -68,8 +67,8 @@ export const portfolioData = {
     },
     {
       name: "Email",
-      url: "mailto:gomathinathanv9@gmail.com",
-      username: "gomathinathanv9@gmail.com",
+      url: "mailto:gomathinathanvgn@gmail.com",
+      username: "gomathinathanvgn@gmail.com",
       icon: "mail"
     },
     {
@@ -85,209 +84,226 @@ export const portfolioData = {
   // ===========================================================================
   about: {
     sectionTitle: "About Me",
-    sectionSubtitle: "A summary of my education, experience, and work.",
+    sectionSubtitle: "Educational background, technical expertise, certifications, and career objective.",
     paragraphs: [
-      "I am a full stack developer and data analyst from Tirunelveli, Tamil Nadu. Currently, I work at Grownoww Technologies in Tirunelveli. I develop websites and web applications that are fast, simple to use, and reliable.",
-      "I completed my Master of Science degree in Data Analytics in April 2026. Before that, I completed my Bachelor of Science degree in Computer Science in April 2024. I know how to build web applications using React, Node.js, and databases, and how to analyze data using Python and SQL.",
-      "Earlier, I completed a web development internship at Revamp Technologies where I practiced building real web projects. I enjoy writing clean code, learning new tools, and solving problems."
+      "I am Gomathinathan.V, an Aspiring Data Analyst pursuing M.Sc. in Data Analytics (CGPA: 8.5, 2024–2026) at Manonmaniam Sundaranar University, Tirunelveli, with a B.Sc. in Computer Science (CGPA: 6.8, 2021–2024) from The Madurai Diraviyam Thayumanavar Hindu College, Tirunelveli.",
+      "Motivated and Postgraduated in M.Sc seeking a job to apply my knowledge of handling data, analytical skills, communication abilities and knowledge to support company projects. Eager to contribute to data driven insights and grow professionally while adding value to the organization.",
+      "Certified in Machine Learning Using Python (Simplilearn, 2026), Artificial Intelligence for Business (Simplilearn, 2026), and Natural Language Processing (NPTEL, 2025). Presented technical research papers and participated in Big Data & AI workshops across Tamil Nadu."
     ],
     principles: [
       {
-        title: "Reliable Websites",
-        description: "Building websites that run smoothly and look clear on both mobile phones and laptops."
+        title: "Analytical Thinking & Problem Solving",
+        description: "Applying machine learning, statistical modeling, and data manipulation to uncover insights from complex datasets."
       },
       {
-        title: "Helpful Data Analysis",
-        description: "Using data and charts to find patterns and help people make good decisions."
+        title: "Power BI & Dashboard Visualisation",
+        description: "Designing dynamic Business Intelligence dashboards with DAX calculations and interactive KPI reporting."
       },
       {
-        title: "Clean and Simple Code",
-        description: "Writing code that is organized, easy to read, and easy for teams to maintain."
+        title: "Programming & Database Architecture",
+        description: "Developing robust workflows using Python, HTML, CSS, and writing structured PostgreSQL queries."
       },
       {
-        title: "Continuous Learning",
-        description: "Always practicing new tools and programming languages to improve my work."
+        title: "Collaboration & Continuous Learning",
+        description: "Active learner engaged in academic paper presentations, industrial AI workshops, and Big Data training."
       }
     ],
     quickFacts: [
-      { label: "Current Company", value: "Grownoww Technologies (Tirunelveli)" },
-      { label: "Previous Internship", value: "Revamp Technologies" },
-      { label: "Location", value: "Tirunelveli, Tamil Nadu, India" },
-      { label: "Post Graduation", value: "M.Sc. Data Analytics (April 2026)" },
-      { label: "Under Graduation", value: "B.Sc. Computer Science (April 2024)" },
-      { label: "Languages Known", value: "English and Tamil" }
+      { label: "Post Graduation", value: "M.Sc. Data Analytics (CGPA: 8.5), MSU" },
+      { label: "Under Graduation", value: "B.Sc. Computer Science (CGPA: 6.8), MDT Hindu College" },
+      { label: "HSC & SSLC", value: "89.6% & 84.2%, Meenakshi Matriculation" },
+      { label: "Location", value: "73, VVK Street, Pettai, Tirunelveli – 627004" },
+      { label: "Languages Known", value: "Tamil, English, Hindi (R&W), Malayalam (R&W)" },
+      { label: "Contact Email", value: "gomathinathanvgn@gmail.com" }
     ]
   },
 
   // ===========================================================================
-  // 4. TECHNICAL SKILLS
+  // 4. TECHNICAL & SOFT SKILLS
   // ===========================================================================
   skills: {
-    sectionTitle: "Technical Skills",
-    sectionSubtitle: "The tools and technologies that I use regularly.",
+    sectionTitle: "Technical & Soft Skills",
+    sectionSubtitle: "Core programming languages, databases, tools, and professional competencies.",
     categories: [
       {
-        id: "web-development",
-        name: "Full Stack Web Development",
+        id: "programming",
+        name: "Programming Languages & Web",
         icon: "layout",
-        description: "Frontend design and backend server programming.",
+        description: "Core programming and web development technologies.",
         items: [
-          { name: "JavaScript & TypeScript", level: 90, tag: "Proficient" },
-          { name: "React.js", level: 88, tag: "Proficient" },
-          { name: "HTML5 & CSS3", level: 94, tag: "Advanced" },
-          { name: "Node.js & Express.js", level: 86, tag: "Proficient" },
-          { name: "REST APIs", level: 90, tag: "Proficient" }
-        ]
-      },
-      {
-        id: "data-analytics",
-        name: "Data Analytics",
-        icon: "database",
-        description: "Working with data, numbers, and visual charts.",
-        items: [
-          { name: "Python", level: 88, tag: "Proficient" },
-          { name: "Pandas & NumPy", level: 86, tag: "Proficient" },
-          { name: "Data Visualization", level: 85, tag: "Proficient" },
-          { name: "Exploratory Data Analysis", level: 88, tag: "Proficient" },
-          { name: "Machine Learning Basics", level: 80, tag: "Familiar" }
+          { name: "Python", level: 94, tag: "Proficient" },
+          { name: "HTML5", level: 95, tag: "Advanced" },
+          { name: "CSS3", level: 92, tag: "Advanced" }
         ]
       },
       {
         id: "databases",
         name: "Databases & Storage",
         icon: "server",
-        description: "Storing and querying application data.",
+        description: "Relational database querying and modeling.",
         items: [
-          { name: "SQL (MySQL & PostgreSQL)", level: 88, tag: "Proficient" },
-          { name: "MongoDB", level: 84, tag: "Familiar" },
-          { name: "Database Table Design", level: 86, tag: "Proficient" },
-          { name: "Writing Database Queries", level: 85, tag: "Proficient" }
+          { name: "PostgreSQL", level: 90, tag: "Proficient" },
+          { name: "SQL Query Optimization", level: 88, tag: "Proficient" },
+          { name: "Data Modeling & Schemas", level: 86, tag: "Proficient" }
         ]
       },
       {
-        id: "tools",
-        name: "Developer Tools",
+        id: "tools-devops",
+        name: "Tools & DevOps",
         icon: "cloud",
-        description: "Tools for coding, testing, and saving project versions.",
+        description: "BI visual analytics, version control, and office suites.",
         items: [
+          { name: "PowerBI", level: 92, tag: "Advanced" },
           { name: "Git & GitHub", level: 90, tag: "Proficient" },
-          { name: "VS Code Editor", level: 92, tag: "Advanced" },
-          { name: "Postman API Testing", level: 86, tag: "Proficient" },
-          { name: "npm & Vite", level: 88, tag: "Proficient" }
+          { name: "MS Office Suite (Word, Excel, PPT)", level: 94, tag: "Proficient" },
+          { name: "VS Code Editor", level: 92, tag: "Advanced" }
+        ]
+      },
+      {
+        id: "soft-skills",
+        name: "Soft Skills & Professional Competencies",
+        icon: "zap",
+        description: "Communication, analytical thinking, and collaboration.",
+        items: [
+          { name: "Strong Communication Skills", level: 95, tag: "Advanced" },
+          { name: "Analytical Thinking & Problem Solving", level: 94, tag: "Advanced" },
+          { name: "Time Management & Organizational Skills", level: 92, tag: "Proficient" },
+          { name: "Team Collaboration & Coordination", level: 92, tag: "Proficient" },
+          { name: "Critical Thinking & Decision Making", level: 90, tag: "Proficient" }
         ]
       }
     ]
   },
 
   // ===========================================================================
-  // 5. WORK EXPERIENCE
+  // 5. CERTIFICATIONS
+  // ===========================================================================
+  certifications: [
+    {
+      title: "Machine Learning Using Python",
+      issuer: "Simplilearn SkillUp",
+      date: "3 April 2026",
+      credentialId: "10050156",
+      verifyUrl: "assets/certificates/simplilearn_ml_python.png"
+    },
+    {
+      title: "Artificial Intelligence for Business",
+      issuer: "Simplilearn SkillUp",
+      date: "13 March 2026",
+      credentialId: "9956385",
+      verifyUrl: "assets/certificates/simplilearn_ai_for_business.png"
+    },
+    {
+      title: "Get Started with SQL Analytics and BI on Databricks",
+      issuer: "Databricks & Simplilearn",
+      date: "13 March 2026",
+      credentialId: "9947078",
+      verifyUrl: "assets/certificates/databricks_sql_analytics.png"
+    },
+    {
+      title: "Natural Language Processing (NLP)",
+      issuer: "NPTEL (IIT Kharagpur / SWAYAM)",
+      date: "Jan–Apr 2025",
+      credentialId: "NPTEL25CS51S458800820",
+      verifyUrl: "assets/certificates/nptel_nlp_certificate.png"
+    }
+  ],
+
+  // ===========================================================================
+  // 6. WORK EXPERIENCE & INTERNSHIPS (DESCENDING)
   // ===========================================================================
   experience: {
     sectionTitle: "Work Experience",
-    sectionSubtitle: "My work history and internship experience.",
-    roles: [
+    sectionSubtitle: "Professional developer roles and technical internships.",
+    items: [
       {
-        role: "Full Stack Developer",
+        role: "Developer",
         company: "Grownoww Technologies",
-        companyUrl: "https://example.com/grownoww",
-        location: "Tirunelveli, Tamil Nadu",
-        period: "Present",
-        badge: "Current Job",
-        description: "Developing and supporting web applications for company clients.",
+        period: "September 2026 – Present",
+        status: "Current Role",
+        badge: "Full-Time",
+        image: "assets/institutes/institute_grownoww.jpg",
+        location: "Tirunelveli / India",
         highlights: [
-          "Building responsive web pages that look good on all devices.",
-          "Creating backend APIs and connecting them to database storage.",
-          "Working with team members in Tirunelveli to build requested features on time.",
-          "Testing website functions to make sure there are no errors."
-        ],
-        techStack: ["React.js", "Node.js", "Express", "JavaScript", "SQL", "MongoDB", "CSS3", "Git"]
+          "Building scalable full-stack web applications and robust data pipelines.",
+          "Engineering Python backend microservices, REST APIs, and PostgreSQL database schemas.",
+          "Collaborating on data-driven business solutions, UI performance, and production deployments."
+        ]
       },
       {
-        role: "Full Stack Web Development Intern",
+        role: "Developer / Data Analyst Intern",
         company: "Revamp Technologies",
-        companyUrl: "https://example.com/revamp",
-        location: "Tamil Nadu, India",
-        period: "Internship",
+        period: "April 2026 – August 2026",
+        status: "Completed",
         badge: "Internship",
-        description: "Worked on practical web development tasks and user interfaces.",
+        image: "assets/institutes/institute_revamp.jpg",
+        location: "Tamil Nadu, India",
         highlights: [
-          "Built web components using HTML, CSS, and JavaScript.",
-          "Connected frontend screens to backend API endpoints.",
-          "Learned Git workflows and collaborative team programming on GitHub."
-        ],
-        techStack: ["JavaScript", "HTML5", "CSS3", "React", "Node.js", "REST APIs", "GitHub"]
+          "Completed 5-month intensive developer and data analyst internship.",
+          "Developed automated data extraction pipelines, ETL workflows, and interactive Power BI KPI dashboards.",
+          "Participated in agile sprints, code reviews, and software feature implementation."
+        ]
       }
     ]
   },
 
   // ===========================================================================
-  // 6. EDUCATION
+  // 7. EDUCATIONAL QUALIFICATIONS (DESCENDING)
   // ===========================================================================
   education: {
-    sectionTitle: "Education",
-    sectionSubtitle: "My degrees and schooling details.",
+    sectionTitle: "Educational Qualifications",
+    sectionSubtitle: "Academic degrees, grades, and institutions in descending order.",
     degrees: [
       {
-        degree: "Master of Science (M.Sc.) in Data Analytics",
-        institution: "Post-Graduate Degree",
+        degree: "M.Sc. Data Analytics",
+        institution: "Manonmaniam Sundaranar University, Tirunelveli",
         institutionUrl: "#",
-        location: "Tamil Nadu, India",
-        period: "Completed April 2026",
-        grade: "Post Graduate",
+        location: "Tirunelveli, Tamil Nadu",
+        period: "2024 – 2026",
+        grade: "CGPA: 8.5 (First Class with Distinction)",
+        image: "assets/institutes/institute_msu.jpg",
         highlights: [
-          "Studied data analytics, statistical methods, machine learning, and data visualization.",
-          "Practiced cleaning data, finding insights, and creating visual charts using Python."
+          "Secured outstanding academic score (CGPA: 8.5) in Data Analytics, NLP, Machine Learning, and Big Data.",
+          "Authored & presented research paper 'Next–Gen Resume Ranking Using BM25 & SBERT Embeddings' at ICIRET-2026.",
+          "Hands-on projects: CNN Driver Fatigue Detection, Voice AI Assistant, and Power BI electricity analytics."
         ]
       },
       {
-        degree: "Bachelor of Science (B.Sc.) in Computer Science",
-        institution: "Undergraduate Degree",
+        degree: "B.Sc. Computer Science",
+        institution: "The Madurai Diraviyam Thayumanavar Hindu College, Tirunelveli",
         institutionUrl: "#",
-        location: "Tamil Nadu, India",
-        period: "Completed April 2024",
-        grade: "Graduate",
+        location: "Tirunelveli, Tamil Nadu",
+        period: "2021 – 2024",
+        grade: "CGPA: 6.8 (First Class)",
+        image: "assets/institutes/institute_mdt.jpg",
         highlights: [
-          "Studied computer programming, data structures, algorithms, databases, and web technology.",
-          "Built foundational knowledge in computer science and software development."
+          "Graduated First Class in B.Sc. Computer Science.",
+          "Comprehensive foundation in Python, Relational Database Systems (PostgreSQL/SQL), Web Development, and Algorithms."
         ]
       },
       {
-        degree: "Higher Secondary Certificate (12th Standard)",
-        institution: "State Board School Education",
+        degree: "Higher Secondary Certificate (HSC)",
+        institution: "Meenakshi Matriculation Higher Secondary School, Tirunelveli",
         institutionUrl: "#",
-        location: "Tamil Nadu, India",
-        period: "Completed 2021",
-        grade: "Higher Secondary",
+        location: "Tirunelveli, Tamil Nadu",
+        period: "2019 – 2021",
+        grade: "89.6% (Distinction)",
+        image: "assets/institutes/institute_meenakshi.jpg",
         highlights: [
-          "Studied Mathematics, Computer Science, and Science subjects."
+          "Graduated Higher Secondary with 89.6% distinction focusing on Mathematics and Computer Science."
         ]
       },
       {
-        degree: "Secondary School Leaving Certificate (10th Standard)",
-        institution: "State Board School Education",
+        degree: "Secondary School Leaving Certificate (SSLC)",
+        institution: "Meenakshi Matriculation Higher Secondary School, Tirunelveli",
         institutionUrl: "#",
-        location: "Tamil Nadu, India",
-        period: "Completed 2019",
-        grade: "Secondary School",
+        location: "Tirunelveli, Tamil Nadu",
+        period: "2019",
+        grade: "84.2% (Distinction)",
+        image: "assets/institutes/institute_meenakshi.jpg",
         highlights: [
-          "Completed general school subjects with good marks."
+          "Completed secondary school examination with 84.2% distinction."
         ]
-      }
-    ],
-    certifications: [
-      {
-        title: "Full Stack Web Development Certificate",
-        issuer: "Web Development Course",
-        date: "2024",
-        credentialId: "FSWD-2024",
-        verifyUrl: "https://github.com/gomathinathan10"
-      },
-      {
-        title: "Data Analytics with Python Certificate",
-        issuer: "Data Science Training",
-        date: "2025",
-        credentialId: "DATA-2025",
-        verifyUrl: "https://github.com/gomathinathan10"
       }
     ]
   },
@@ -297,87 +313,106 @@ export const portfolioData = {
   // ===========================================================================
   projects: {
     sectionTitle: "Projects",
-    sectionSubtitle: "Selected projects that I have worked on.",
-    categories: ["All", "Full-Stack", "Data Analytics"],
+    sectionSubtitle: "Featured technical projects across Machine Learning, Computer Vision, Voice AI, and Power BI.",
+    categories: ["All", "Machine Learning", "Data Analytics", "AI & Vision"],
     items: [
       {
-        id: "grownoww-app",
-        title: "Company Web Application",
-        category: "Full-Stack",
-        badge: "Web App",
+        id: "resume-ranking",
+        title: "Next–Gen Resume Ranking Using BM25 & SBERT Embeddings",
+        category: "Machine Learning",
+        badge: "NLP & ML",
         image: "./assets/project-observability.jpg",
-        description: "A complete web application built with React and Node.js. It has clean navigation, responsive layout, and interactive forms.",
-        keyImpact: "Loads quickly and works smoothly on mobile phones, tablets, and desktops.",
-        techStack: ["React.js", "Node.js", "Express", "CSS3", "REST APIs", "MongoDB"],
+        description: "Automatically analyze and rank Resumes according to job description, calculating scores using ML models, combining BM25 keyword matching with SBERT deep contextual embeddings.",
+        keyImpact: "Presented as a research paper at A.V.C. College of Engineering, Mayiladuthurai (2026).",
+        techStack: ["Python", "BM25", "SBERT Embeddings", "NLP", "Machine Learning", "Scikit-Learn"],
         liveUrl: "https://github.com/gomathinathan10",
         githubUrl: "https://github.com/gomathinathan10",
         details: [
-          "Built modular components that are easy to update.",
-          "Created input forms with instant validation.",
-          "Connected backend routes to save and read data safely."
+          "Combined BM25 for lexical relevance and SBERT embeddings for deep semantic match scoring.",
+          "Automated resume parsing against job specifications with ranked score calculation.",
+          "Paper presented at A.V.C. College of Engineering National Conference (2026)."
         ]
       },
       {
-        id: "data-analytics-dashboard",
-        title: "Data Analytics Dashboard",
-        category: "Data Analytics",
-        badge: "Data Project",
-        image: "./assets/project-fintech.jpg",
-        description: "An analytics project that takes raw datasets and generates clear visual charts to understand key trends and numbers.",
-        keyImpact: "Helps users see data patterns quickly through clear graphs and summary tables.",
-        techStack: ["Python", "Pandas", "NumPy", "Matplotlib", "SQL"],
-        liveUrl: "https://github.com/gomathinathan10",
-        githubUrl: "https://github.com/gomathinathan10",
-        details: [
-          "Cleaned and prepared raw dataset files for analysis.",
-          "Generated charts to show trends and important statistics.",
-          "Wrote SQL queries to filter and group information."
-        ]
-      },
-      {
-        id: "revamp-portal",
-        title: "Client Information Portal",
-        category: "Full-Stack",
-        badge: "Internship Project",
+        id: "driver-fatigue",
+        title: "Driver Fatigue Detection System",
+        category: "AI & Vision",
+        badge: "Computer Vision",
         image: "./assets/project-developer-platform.jpg",
-        description: "A web portal created during my internship to manage client details and records in one organized place.",
-        keyImpact: "Simplified record keeping and search with a clean user interface.",
-        techStack: ["JavaScript", "React", "Node.js", "REST APIs", "Git", "GitHub"],
+        description: "Vision based fatigue detection and alarm system using Convolutional Neural Networks (CNN) and OpenCV to monitor driver drowsiness and trigger real-time alerts.",
+        keyImpact: "Real-time webcam stream processing detecting eye closure duration and head tilt to trigger instant acoustic alarms.",
+        techStack: ["Python", "CNN", "OpenCV", "Deep Learning", "Computer Vision", "Real-Time Detection"],
         liveUrl: "https://github.com/gomathinathan10",
         githubUrl: "https://github.com/gomathinathan10",
         details: [
-          "Created responsive tables to show records clearly.",
-          "Added form checks so users enter correct information.",
-          "Used GitHub to save code versions cleanly."
+          "Trained CNN model for accurate facial landmark and eyelid closure recognition.",
+          "Constructed high-speed OpenCV image stream pipeline with zero latency.",
+          "Integrated alert alarm mechanism when driver fatigue is detected."
+        ]
+      },
+      {
+        id: "datatalk-bot",
+        title: "DataTalk – Conversational Analytical Assistant",
+        category: "Machine Learning",
+        badge: "Voice AI",
+        image: "./assets/project-fintech.jpg",
+        description: "A voice conversational chatbot for Data Analytical Queries connecting with API key, providing conversational natural language access to complex dataset metrics.",
+        keyImpact: "Hands-free voice querying of datasets, translating speech into analytical SQL queries and spoken summary responses.",
+        techStack: ["Python", "Voice AI", "REST API", "PostgreSQL", "NLP", "Data Analytics"],
+        liveUrl: "https://github.com/gomathinathan10",
+        githubUrl: "https://github.com/gomathinathan10",
+        details: [
+          "Engineered voice-to-text recognition and text-to-speech audio synthesis.",
+          "Connected to backend APIs with API key authentication for dynamic query execution.",
+          "Parsed complex data queries and formatted intuitive conversational analytics."
+        ]
+      },
+      {
+        id: "electricity-consumption",
+        title: "Analysis of Commercial Electricity Consumption in Indian State",
+        category: "Data Analytics",
+        badge: "Power BI",
+        image: "./assets/project-fintech.jpg",
+        description: "Dashboard Visualisation of Electricity Consumption using Powerbi, analyzing commercial sector consumption patterns, peak demands, and geographical distributions across an Indian state.",
+        keyImpact: "Interactive dashboards with multi-level drill-down capabilities, KPI metrics, and energy demand forecasting.",
+        techStack: ["PowerBI", "Data Analytics", "Dashboard Visualization", "DAX", "Data Modeling"],
+        liveUrl: "https://github.com/gomathinathan10",
+        githubUrl: "https://github.com/gomathinathan10",
+        details: [
+          "Modeled commercial power consumption data across diverse Indian state regions.",
+          "Created interactive Power BI dashboards with DAX calculations and visual slicers.",
+          "Identified seasonal peaks and demand variance to assist power grid planning."
         ]
       }
     ]
   },
 
   // ===========================================================================
-  // 8. SERVICES / WHAT I DO
+  // 8. EXTRA-CURRICULAR ACTIVITIES & WORKSHOPS
   // ===========================================================================
-  services: {
-    sectionTitle: "What I Do",
-    sectionSubtitle: "Services and skills that I can provide for your team or project.",
-    items: [
+  extraCurricular: {
+    paperPresentation: [
       {
-        title: "Web Development",
-        icon: "code",
-        description: "Building responsive websites and web applications using React, Node.js, and modern CSS.",
-        deliverables: ["Responsive web pages", "Backend APIs", "Clean user interfaces", "Database connections"]
+        title: "Next – Gen Resume Ranking Using BM25 & SBERT Embeddings",
+        year: "2026",
+        venue: "A.V.C. College of Engineering, Mayiladuthurai"
+      }
+    ],
+    workshops: [
+      {
+        title: "AI – Driven Industry Oriented Programming & Training",
+        year: "2026",
+        venue: "Dr. Sivanthi Aditanar College of Engineering, Tiruchendur"
       },
       {
-        title: "Data Analytics",
-        icon: "database",
-        description: "Cleaning data, analyzing trends, and building visual dashboards with Python and SQL.",
-        deliverables: ["Data cleaning", "Visual charts", "Summary reports", "SQL query writing"]
+        title: "Hadoop Tools for Big Data",
+        year: "2025",
+        venue: "Manonmaniam Sundaranar University, Tirunelveli"
       },
       {
-        title: "Website Improvement",
-        icon: "zap",
-        description: "Updating existing websites to load faster and look better on mobile phones.",
-        deliverables: ["Mobile friendly layout", "Speed improvements", "Design updates", "Bug fixes"]
+        title: "PowerBI Workshop",
+        year: "2025",
+        venue: "Dr. Sivanthi Aditanar College of Engineering, Tiruchendur"
       }
     ]
   },
@@ -387,10 +422,10 @@ export const portfolioData = {
   // ===========================================================================
   contact: {
     sectionTitle: "Contact Me",
-    sectionSubtitle: "Looking for a full stack developer or data analyst? Feel free to reach out.",
-    email: "gomathinathanv9@gmail.com",
+    sectionSubtitle: "Get in touch for Data Analyst roles, machine learning opportunities, or technical collaborations.",
+    email: "gomathinathanvgn@gmail.com",
     phone: "+91 6382988134",
-    location: "Tirunelveli, Tamil Nadu, India",
+    location: "73, VVK Street, Pettai, Tirunelveli, Tamil Nadu",
     calendarUrl: "",
     responseTime: "I usually reply within 24 hours.",
     formFields: {
@@ -405,8 +440,8 @@ export const portfolioData = {
   // 10. SITE FOOTER
   // ===========================================================================
   footer: {
-    copyrightText: "Gomathinathan.V. All rights reserved.",
-    builtWith: "Built with HTML, CSS, JavaScript, and a centralized configuration file.",
+    copyrightText: "GOMATHINATHAN.V. All rights reserved.",
+    builtWith: "Built with HTML, CSS, JavaScript, and centralized portfolio data.",
     topButtonLabel: "Back to top"
   }
 };

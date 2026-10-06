@@ -16,6 +16,8 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         about: resolve(__dirname, 'about.html'),
         certifications: resolve(__dirname, 'certifications.html'),
+        portfolio: resolve(__dirname, 'portfolio.html'),
+        projects: resolve(__dirname, 'projects.html'),
         news: resolve(__dirname, 'news-classic.html'),
         contact: resolve(__dirname, 'contact.html'),
         notFound: resolve(__dirname, '404.html')

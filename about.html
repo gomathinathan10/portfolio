@@ -8,9 +8,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="Gomathinathan.V">
-    <meta name="description" content="About Gomathinathan.V - Education, Experience, Principles and Skills">
+    <meta name="description" content="About Gomathinathan.V - Work Experience, Education, Principles and Skills">
     <!-- ======== Page title ============ -->
-    <title>About Me | Gomathinathan.V - Full Stack Developer</title>
+    <title>About Me | Gomathinathan.V - Full Stack Developer & Data Analyst</title>
     <!--<< Favicon >>-->
     <link rel="shortcut icon" href="assets/img/favicon.svg">
     <!--<< Bootstrap min.css >>-->
@@ -33,11 +33,41 @@
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
         .about-avatar-custom {
+            position: relative;
+            z-index: 2;
             width: 100%;
-            max-width: 480px;
-            border-radius: 20px;
-            object-fit: cover;
-            border: 2px solid rgba(191, 247, 71, 0.3);
+            max-width: 440px;
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 15px 30px rgba(0,0,0,0.75));
+            border-radius: 0 !important;
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        .about-wrapper-3 .about-images {
+            position: relative;
+            z-index: 5;
+            display: inline-block;
+            margin-top: 0;
+        }
+        .about-wrapper-3 .about-images .bg-shape {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            width: 420px;
+            max-width: 92%;
+            height: auto;
+            pointer-events: none;
+        }
+        .about-wrapper-3 .about-images .bg-shape img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            opacity: 0.95;
+            filter: drop-shadow(0 0 50px rgba(191, 247, 71, 0.35));
         }
         .fact-card {
             background: rgba(255, 255, 255, 0.03);
@@ -65,6 +95,421 @@
             color: #ffffff;
             text-shadow: 0 0 12px rgba(191, 247, 71, 0.6);
         }
+
+        /* ==========================================================================
+           CURVY ORGANIC TREE TIMELINE
+           ========================================================================== */
+        .curvy-tree-timeline {
+            position: relative;
+            max-width: 1160px;
+            margin: 50px auto 0;
+            padding: 40px 0 60px;
+        }
+        
+        /* Central Botanical Curvy Tree Stem SVG */
+        .tree-curvy-svg-line {
+            position: absolute;
+            top: 20px;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 160px;
+            height: calc(100% - 40px);
+            z-index: 2;
+            pointer-events: none;
+            overflow: visible;
+        }
+
+        .pulse-core-layer {
+            animation: flowBioPulse 14s linear infinite;
+        }
+
+        @keyframes flowBioPulse {
+            0% {
+                stroke-dashoffset: 1000;
+            }
+            100% {
+                stroke-dashoffset: 0;
+            }
+        }
+
+        /* Tree Top Crown & Bottom Root Markers */
+        .tree-top-crown {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #191c26;
+            border: 3.5px solid #BFF747;
+            box-shadow: 0 0 30px rgba(191, 247, 71, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #BFF747;
+            font-size: 22px;
+            z-index: 4;
+            animation: pulse-glow 2.5s infinite;
+        }
+        .tree-bottom-roots {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: #191c26;
+            border: 3.5px solid #2bdb89;
+            box-shadow: 0 0 30px rgba(43, 219, 137, 0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #2bdb89;
+            font-size: 22px;
+            z-index: 4;
+        }
+
+        /* Timeline Branches */
+        .tree-branch-row {
+            position: relative;
+            margin-bottom: 60px;
+            width: 50%;
+            z-index: 3;
+        }
+        .tree-branch-row:last-child {
+            margin-bottom: 20px;
+        }
+        .branch-row-left {
+            left: 0;
+            padding-right: 55px;
+        }
+        .branch-row-right {
+            left: 50%;
+            padding-left: 55px;
+        }
+
+        /* Curvy Wood Bark Connector Arms */
+        .branch-row-left .curvy-arm {
+            position: absolute;
+            right: -8px;
+            top: 34px;
+            width: 62px;
+            height: 46px;
+            border-bottom: 5px solid #84ba32;
+            border-right: 5px solid #5a3d24;
+            border-bottom-right-radius: 35px;
+            pointer-events: none;
+            box-shadow: 3px 3px 14px rgba(191, 247, 71, 0.4);
+        }
+        .branch-row-right .curvy-arm {
+            position: absolute;
+            left: -8px;
+            top: 34px;
+            width: 62px;
+            height: 46px;
+            border-bottom: 5px solid #84ba32;
+            border-left: 5px solid #5a3d24;
+            border-bottom-left-radius: 35px;
+            pointer-events: none;
+            box-shadow: -3px 3px 14px rgba(191, 247, 71, 0.4);
+        }
+
+        /* Central Leaf Sprout Nodes */
+        .tree-leaf-node {
+            position: absolute;
+            top: 22px;
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            background: #20160e;
+            border: 3.5px solid #84ba32;
+            box-shadow: 0 0 20px rgba(191, 247, 71, 0.85), inset 0 0 8px rgba(191, 247, 71, 0.4);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #BFF747;
+            font-size: 14px;
+            z-index: 4;
+            transition: all 0.35s ease;
+        }
+        .branch-row-left .tree-leaf-node {
+            right: -18px;
+        }
+        .branch-row-right .tree-leaf-node {
+            left: -18px;
+        }
+        .tree-leaf-node.active-sprout {
+            background: #BFF747;
+            color: #111;
+            border-color: #5a3d24;
+            animation: pulse-glow 2s infinite;
+        }
+
+        @keyframes pulse-glow {
+            0% { box-shadow: 0 0 0 0 rgba(191, 247, 71, 0.8); }
+            70% { box-shadow: 0 0 0 16px rgba(191, 247, 71, 0); }
+            100% { box-shadow: 0 0 0 0 rgba(191, 247, 71, 0); }
+        }
+
+        /* Branch Card Content */
+        .tree-card {
+            background: #161922;
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 24px;
+            padding: 24px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.45);
+            transition: all 0.35s cubic-bezier(0.165, 0.84, 0.44, 1);
+            position: relative;
+            overflow: hidden;
+        }
+        .tree-card::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 24px;
+            padding: 1.5px;
+            background: linear-gradient(135deg, rgba(191, 247, 71, 0.3), transparent 60%, rgba(56, 182, 255, 0.2));
+            -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+            pointer-events: none;
+        }
+        .tree-card:hover {
+            border-color: #BFF747;
+            transform: translateY(-6px);
+            box-shadow: 0 25px 50px rgba(0, 0, 0, 0.7), 0 0 30px rgba(191, 247, 71, 0.2);
+        }
+        .tree-card .institute-banner {
+            width: 100%;
+            height: 180px;
+            border-radius: 16px;
+            overflow: hidden;
+            margin-bottom: 18px;
+            position: relative;
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            background: #0d0f14;
+        }
+        .tree-card .institute-banner img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+        .tree-card:hover .institute-banner img {
+            transform: scale(1.06);
+        }
+        .tree-leaf-pill {
+            display: inline-flex;
+            align-items: center;
+            gap: 7px;
+            background: rgba(191, 247, 71, 0.12);
+            color: #BFF747;
+            padding: 5px 15px;
+            border-radius: 30px;
+            font-size: 13px;
+            font-weight: 700;
+            border: 1px solid rgba(191, 247, 71, 0.3);
+            margin-bottom: 12px;
+        }
+        .tree-leaf-pill.badge-cyan {
+            background: rgba(56, 182, 255, 0.12);
+            color: #38b6ff;
+            border-color: rgba(56, 182, 255, 0.3);
+        }
+        .tree-leaf-pill.badge-purple {
+            background: rgba(187, 107, 217, 0.12);
+            color: #bb6bd9;
+            border-color: rgba(187, 107, 217, 0.3);
+        }
+        .tree-leaf-pill.badge-emerald {
+            background: rgba(43, 219, 137, 0.12);
+            color: #2bdb89;
+            border-color: rgba(43, 219, 137, 0.3);
+        }
+        .tree-leaf-pill.badge-amber {
+            background: rgba(255, 171, 0, 0.12);
+            color: #ffab00;
+            border-color: rgba(255, 171, 0, 0.3);
+        }
+        .tree-card-title {
+            color: #ffffff;
+            font-size: 19px;
+            font-weight: 700;
+            margin-bottom: 6px;
+            line-height: 1.35;
+        }
+        .tree-card-subtitle {
+            color: #a0aec0;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 14px;
+            display: flex;
+            align-items: center;
+            gap: 6px;
+        }
+        .tree-points-list {
+            padding-left: 0;
+            list-style: none;
+            margin-bottom: 0;
+        }
+        .tree-points-list li {
+            position: relative;
+            padding-left: 20px;
+            font-size: 13.5px;
+            color: rgba(255, 255, 255, 0.75);
+            margin-bottom: 8px;
+            line-height: 1.5;
+        }
+        .tree-points-list li:last-child {
+            margin-bottom: 0;
+        }
+        .tree-points-list li::before {
+            content: '🌿';
+            position: absolute;
+            left: 0;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+
+        /* Mobile & Tablet Responsiveness */
+        @media (max-width: 991px) {
+            .curvy-tree-timeline {
+                padding: 35px 0 45px;
+                margin-top: 30px;
+            }
+            .tree-curvy-svg-line {
+                left: 22px;
+                transform: translateX(-50%);
+                width: 50px;
+            }
+            .tree-top-crown, .tree-bottom-roots {
+                left: 22px;
+                transform: translateX(-50%);
+                width: 42px;
+                height: 42px;
+                font-size: 18px;
+            }
+            .tree-branch-row {
+                width: 100%;
+                left: 0 !important;
+                padding-left: 56px !important;
+                padding-right: 0 !important;
+                margin-bottom: 45px;
+            }
+            .tree-leaf-node {
+                left: 6px !important;
+                right: auto !important;
+                width: 32px;
+                height: 32px;
+                font-size: 13px;
+                top: 22px;
+            }
+            .branch-row-left .curvy-arm,
+            .branch-row-right .curvy-arm {
+                left: 22px !important;
+                right: auto !important;
+                width: 34px !important;
+                top: 34px;
+                border-left: 3.5px solid #84ba32 !important;
+                border-right: none !important;
+                border-bottom: 3.5px solid #84ba32 !important;
+                border-bottom-left-radius: 20px !important;
+                border-bottom-right-radius: 0 !important;
+                box-shadow: -2px 2px 8px rgba(191, 247, 71, 0.3) !important;
+            }
+            .tree-card {
+                padding: 20px 18px;
+                border-radius: 16px;
+            }
+            .institute-banner {
+                height: 150px;
+                margin-bottom: 14px;
+            }
+        }
+
+        @media (max-width: 575px) {
+            .curvy-tree-timeline {
+                padding: 25px 0 35px;
+                margin-top: 20px;
+            }
+            .tree-curvy-svg-line {
+                left: 16px;
+                transform: translateX(-50%);
+                width: 36px;
+            }
+            .tree-top-crown, .tree-bottom-roots {
+                left: 16px;
+                transform: translateX(-50%);
+                width: 34px;
+                height: 34px;
+                font-size: 14px;
+            }
+            .tree-branch-row {
+                padding-left: 42px !important;
+                margin-bottom: 30px;
+            }
+            .tree-leaf-node {
+                left: 2px !important;
+                width: 28px;
+                height: 28px;
+                font-size: 11px;
+                top: 18px;
+            }
+            .branch-row-left .curvy-arm,
+            .branch-row-right .curvy-arm {
+                left: 16px !important;
+                width: 26px !important;
+                top: 28px;
+                border-left: 3px solid #84ba32 !important;
+                border-bottom: 3px solid #84ba32 !important;
+                border-bottom-left-radius: 16px !important;
+            }
+            .tree-card {
+                padding: 15px 13px;
+                border-radius: 14px;
+            }
+            .institute-banner {
+                height: 125px;
+                border-radius: 10px;
+                margin-bottom: 12px;
+            }
+            .tree-leaf-pill {
+                font-size: 10.5px;
+                padding: 3px 8px;
+                margin-bottom: 8px;
+            }
+            .tree-card-title {
+                font-size: 16px;
+                margin-bottom: 5px;
+            }
+            .tree-card-subtitle {
+                font-size: 12px;
+                margin-bottom: 10px;
+            }
+            .tree-points-list li {
+                font-size: 12px;
+                padding-left: 16px;
+                margin-bottom: 6px;
+                line-height: 1.45;
+            }
+            .tree-points-list li::before {
+                font-size: 10px;
+            }
+            .about-image-3 {
+                max-width: 100% !important;
+                height: auto !important;
+            }
+            .fact-card {
+                padding: 10px 14px;
+                margin-bottom: 10px;
+            }
+            .fact-card strong {
+                font-size: 14px;
+            }
+        }
     </style>
 </head>
 
@@ -78,9 +523,6 @@
                 <span data-text-preloader="G" class="letters-loading">G</span>
                 <span data-text-preloader="O" class="letters-loading">O</span>
                 <span data-text-preloader="M" class="letters-loading">M</span>
-                <span data-text-preloader="A" class="letters-loading">A</span>
-                <span data-text-preloader="T" class="letters-loading">T</span>
-                <span data-text-preloader="H" class="letters-loading">H</span>
                 <span data-text-preloader="I" class="letters-loading">I</span>
             </div>
             <p class="text-center">PORTFOLIO LOADING</p>
@@ -130,7 +572,7 @@
                         </div>
                     </div>
                     <p class="text d-none d-xl-block">
-                        I am a Full Stack Developer & Aspiring Data Analyst based in Tirunelveli, Tamil Nadu. I develop fast, responsive web applications and build data dashboards to find valuable insights.
+                        I am Gomathinathan.V, pursuing M.Sc. in Data Analytics at Manonmaniam Sundaranar University and working as Developer at Grownoww Technologies. I build full stack web solutions, ML systems, and Power BI dashboards.
                     </p>
                     <div class="mobile-menu fix mb-3"></div>
                     <div class="offcanvas__contact">
@@ -141,7 +583,7 @@
                                     <i class="fal fa-map-marker-alt"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a target="_blank" href="#">Tirunelveli, Tamil Nadu, India</a>
+                                    <a target="_blank" href="#">73, VVK Street, Pettai, Tirunelveli – 627004</a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -149,7 +591,7 @@
                                     <i class="fal fa-envelope"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a href="mailto:gomathinathanv9@gmail.com">gomathinathanv9@gmail.com</a>
+                                    <a href="mailto:gomathinathanvgn@gmail.com">gomathinathanvgn@gmail.com</a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -169,7 +611,7 @@
                         <div class="social-icon d-flex align-items-center mt-3">
                             <a href="https://github.com/gomathinathan10" target="_blank"><i class="fab fa-github"></i></a>
                             <a href="https://linkedin.com/in/gomathinathan-v" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="mailto:gomathinathanv9@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="mailto:gomathinathanvgn@gmail.com"><i class="fas fa-envelope"></i></a>
                             <a href="tel:+916382988134"><i class="fas fa-phone"></i></a>
                         </div>
                     </div>
@@ -208,7 +650,7 @@
                                         <a href="certifications.html">Certifications</a>
                                     </li>
                                     <li>
-                                        <a href="news-classic.html">Articles</a>
+                                        <a href="portfolio.html">Projects</a>
                                     </li>
                                     <li>
                                         <a href="contact.html">Contact Me</a>
@@ -232,34 +674,30 @@
         </div>
     </header>
 
-    <!-- Breadcrumb-Section Start -->
-    <section class="breadcrumb-wrapper fix bg-cover" style="background-image: url(/assets/img/breadcrumb/bg.jpg);">
-        <div class="star-shape float-bob-x">
-            <img src="assets/img/shape/star.png" alt="img">
-        </div>
-        <div class="arrow-shape">
-            <img src="assets/img/breadcrumb/arrow.png" alt="img">
-        </div>
+    <!-- Breadcrumb Section Start -->
+    <div class="breadcrumb-wrapper bg-cover" style="background-image: url(/assets/img/hero/bg-3.jpg);">
         <div class="container">
-            <div class="row">
-                <div class="page-heading">
-                    <h2>About Me</h2>
-                    <ul class="breadcrumb-list">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li><i class="fa-solid fa-angle-right"></i></li>
-                        <li class="active">About Me</li>
-                    </ul>
-                </div>
+            <div class="page-heading text-center">
+                <h2 class="wow fadeInUp" data-wow-delay=".3s">About Me</h2>
+                <ul class="breadcrumb-items wow fadeInUp" data-wow-delay=".5s">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </li>
+                    <li class="active">
+                        About
+                    </li>
+                </ul>
             </div>
         </div>
-    </section>
+    </div>
 
-    <!-- Marquee Section Start -->
-    <section class="marquee-section section-bg fix py-3">
-        <div class="marquee-container">
-            <div class="marquee-wrapper">
+    <!-- Marque Section Start -->
+    <section class="marquee-section fix section-padding pb-0">
+        <div class="marquee-wrapper style-2 text-slider">
+            <div class="marquee-inner to-left">
                 <div class="marquee-content">
                     <div class="marquee-text">
                         <img src="assets/img/star/star-2.png" alt="img">
@@ -313,16 +751,11 @@
         <div class="container">
             <div class="about-wrapper-3">
                 <div class="row g-4 align-items-center justify-content-between">
-                    <div class="col-lg-6">
-                        <div class="about-images position-relative">
-                            <img src="assets/profile.jpg" alt="Gomathinathan.V" class="about-avatar-custom wow img-custom-anim-left" data-wow-delay=".3s">
-                            <div class="circle-image">
-                                <div class="text-image">
-                                    <img src="assets/img/about/text.png" alt="img">
-                                    <div class="client-image">
-                                        <img src="assets/img/about/client.png" alt="">
-                                    </div>
-                                </div>
+                    <div class="col-lg-6 text-center">
+                        <div class="about-images position-relative text-center">
+                            <img src="assets/profile.png" alt="Gomathinathan.V" class="about-avatar-custom wow img-custom-anim-left" data-wow-delay=".3s">
+                            <div class="bg-shape">
+                                <img src="assets/img/hero/blur.png" alt="green shape" class="wow img-custom-anim-right" data-wow-delay=".3s">
                             </div>
                         </div>
                     </div>
@@ -330,15 +763,15 @@
                         <div class="about-content">
                             <div class="section-title">
                                 <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">PROFESSIONAL PROFILE</span>
-                                <h2 class="wow fadeInUp" data-wow-delay=".2s">Full Stack Developer & Data Analyst</h2>
+                                <h2 class="wow fadeInUp" data-wow-delay=".2s">Developer & Aspiring Data Analyst</h2>
                                 <p class="wow fadeInUp" data-wow-delay=".3s">
-                                    I am a full stack developer and data analyst from Tirunelveli, Tamil Nadu. Currently, I work at Grownoww Technologies in Tirunelveli. I develop websites and web applications that are fast, simple to use, and reliable.
+                                    I am Gomathinathan.V, currently working as a Developer at Grownoww Technologies, pursuing M.Sc. in Data Analytics (CGPA: 8.5, 2024–2026) at Manonmaniam Sundaranar University, Tirunelveli, and graduated with B.Sc. in Computer Science (CGPA: 6.8, 2021–2024) from The MDT Hindu College, Tirunelveli.
                                 </p>
                                 <p class="wow fadeInUp" data-wow-delay=".4s">
-                                    I completed my Master of Science degree in Data Analytics in April 2026. Before that, I completed my Bachelor of Science degree in Computer Science in April 2024. I know how to build web applications using React, Node.js, and databases, and how to analyze data using Python and SQL.
+                                    Motivated professional seeking to apply my knowledge of full stack software engineering, data analytics, and communication abilities to deliver high-impact company solutions. Eager to contribute to data-driven insights while adding measurable value to the organization.
                                 </p>
                                 <p class="wow fadeInUp" data-wow-delay=".5s">
-                                    Earlier, I completed a web development internship at Revamp Technologies where I practiced building real web projects. I enjoy writing clean code, learning new tools, and solving problems.
+                                    Certified in Machine Learning Using Python (Simplilearn, 2026), AI for Business (Simplilearn, 2026), and NLP (NPTEL, 2025). Experienced across Python, PostgreSQL, Power BI dashboards, BM25/SBERT embeddings, and CNN/OpenCV vision systems.
                                 </p>
                             </div>
 
@@ -347,37 +780,37 @@
                                 <div class="col-sm-6">
                                     <div class="fact-card">
                                         <small class="text-white-50 d-block">Current Role</small>
-                                        <strong class="text-white">Grownoww Technologies</strong>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="fact-card">
-                                        <small class="text-white-50 d-block">Internship</small>
-                                        <strong class="text-white">Revamp Technologies</strong>
+                                        <strong class="text-white">Developer @ Grownoww Tech</strong>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="fact-card">
                                         <small class="text-white-50 d-block">Post Graduation</small>
-                                        <strong class="text-white">M.Sc. Data Analytics (2026)</strong>
+                                        <strong class="text-white">M.Sc. Data Analytics (8.5 CGPA)</strong>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="fact-card">
                                         <small class="text-white-50 d-block">Under Graduation</small>
-                                        <strong class="text-white">B.Sc. Computer Science (2024)</strong>
+                                        <strong class="text-white">B.Sc. CS (6.8 CGPA)</strong>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="fact-card">
+                                        <small class="text-white-50 d-block">HSC & SSLC</small>
+                                        <strong class="text-white">89.6% & 84.2% Distinction</strong>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6">
+                                    <div class="fact-card">
+                                        <small class="text-white-50 d-block">Certifications</small>
+                                        <strong class="text-white">Simplilearn, Databricks & NPTEL</strong>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
                                     <div class="fact-card">
                                         <small class="text-white-50 d-block">Location</small>
-                                        <strong class="text-white">Tirunelveli, Tamil Nadu, India</strong>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="fact-card">
-                                        <small class="text-white-50 d-block">Languages Known</small>
-                                        <strong class="text-white">English & Tamil</strong>
+                                        <strong class="text-white">Pettai, Tirunelveli – 627004</strong>
                                     </div>
                                 </div>
                             </div>
@@ -388,7 +821,7 @@
                                 </a>
                                 <a href="assets/resume.pdf" download class="video-btn">
                                     <span class="icon"><i class="fa-solid fa-download"></i></span>
-                                    <span class="textx">Download CV</span>
+                                    <span class="textx">Download Resume</span>
                                 </a>
                             </div>
 
@@ -399,65 +832,224 @@
         </div>
     </section>
 
-    <!-- Experience Section Start -->
+    <!-- Curvy Tree Branch Timeline Section Start -->
     <section class="experience-section experience-3 section-padding section-bg fix">
         <div class="container">
             <div class="section-title text-center">
-                <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">TIMELINE<img src="assets/img/icon/32.svg" alt="icon"></span>
-                <h2 class="wow fadeInUp" data-wow-delay=".2s">Work History & Education</h2>
+                <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">CAREER JOURNEY<img src="assets/img/icon/32.svg" alt="icon"></span>
+                <h2 class="wow fadeInUp" data-wow-delay=".2s">Work History & Education Tree</h2>
+                <p class="text-white-50 mt-2 wow fadeInUp" data-wow-delay=".3s">Curvilinear organic branch timeline tracing developer experience down through academic roots</p>
             </div>
-            <div class="experience-main-wrapper">
-                <div class="content-item wow fadeInUp" data-wow-delay=".2s">
-                    <div class="head">
-                        <h4><img src="assets/img/icon/32.svg" alt="icon"> Full Stack Developer — Grownoww Technologies</h4>
-                        <span>Present (Tirunelveli, Tamil Nadu)</span>
+
+            <div class="curvy-tree-timeline">
+                
+                <!-- Organic Curved Center Stem SVG Design -->
+                <svg class="tree-curvy-svg-line" viewBox="0 0 160 1000" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <defs>
+                        <!-- Neon Sap & Emerald Gradient -->
+                        <linearGradient id="stemGlowGrad" x1="0" y1="0" x2="0" y2="1000" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#BFF747" stop-opacity="0.9" />
+                            <stop offset="20%" stop-color="#2bdb89" stop-opacity="0.9" />
+                            <stop offset="40%" stop-color="#BFF747" stop-opacity="1" />
+                            <stop offset="60%" stop-color="#38ef7d" stop-opacity="0.9" />
+                            <stop offset="80%" stop-color="#2bdb89" stop-opacity="0.9" />
+                            <stop offset="100%" stop-color="#BFF747" stop-opacity="1" />
+                        </linearGradient>
+
+                        <!-- Wood Bark Brown & Gold Gradient -->
+                        <linearGradient id="stemBarkGrad" x1="0" y1="0" x2="0" y2="1000" gradientUnits="userSpaceOnUse">
+                            <stop offset="0%" stop-color="#3e2716" />
+                            <stop offset="30%" stop-color="#6e4a28" />
+                            <stop offset="60%" stop-color="#55371c" />
+                            <stop offset="100%" stop-color="#2b1a0d" />
+                        </linearGradient>
+
+                        <!-- Glow Filter -->
+                        <filter id="svgGlow" x="-50%" y="-50%" width="200%" height="200%">
+                            <feGaussianBlur in="SourceGraphic" stdDeviation="6" result="blur" />
+                            <feMerge>
+                                <feMergeNode in="blur" />
+                                <feMergeNode in="SourceGraphic" />
+                            </feMerge>
+                        </filter>
+                    </defs>
+
+                    <!-- Layer 1: Ambient Outer Neon Glow -->
+                    <path class="svg-curvy-path glow-layer"
+                          d="M 80,10 C 35,85 35,125 80,170 S 125,255 80,335 S 35,420 80,500 S 125,585 80,665 S 35,750 80,830 S 125,915 80,990"
+                          stroke="rgba(191, 247, 71, 0.25)" stroke-width="22" stroke-linecap="round" />
+
+                    <!-- Layer 2: Organic Bark Trunk Foundation -->
+                    <path class="svg-curvy-path bark-layer"
+                          d="M 80,10 C 35,85 35,125 80,170 S 125,255 80,335 S 35,420 80,500 S 125,585 80,665 S 35,750 80,830 S 125,915 80,990"
+                          stroke="url(#stemBarkGrad)" stroke-width="12" stroke-linecap="round" />
+
+                    <!-- Layer 3: Vibrant Glowing Emerald & Lime Sap Stem -->
+                    <path class="svg-curvy-path main-sap-layer"
+                          d="M 80,10 C 35,85 35,125 80,170 S 125,255 80,335 S 35,420 80,500 S 125,585 80,665 S 35,750 80,830 S 125,915 80,990"
+                          stroke="url(#stemGlowGrad)" stroke-width="5" stroke-linecap="round" filter="url(#svgGlow)" />
+
+                    <!-- Layer 4: Inner Flowing Bio-Pulse Core -->
+                    <path class="svg-curvy-path pulse-core-layer"
+                          d="M 80,10 C 35,85 35,125 80,170 S 125,255 80,335 S 35,420 80,500 S 125,585 80,665 S 35,750 80,830 S 125,915 80,990"
+                          stroke="#ffffff" stroke-width="2" stroke-linecap="round" stroke-dasharray="12 28" />
+
+                    <!-- Decorative Orbiting Seed Rings along the Curvy Stem -->
+                    <circle cx="45" cy="105" r="5" fill="#BFF747" filter="url(#svgGlow)" />
+                    <circle cx="115" cy="270" r="5" fill="#2bdb89" filter="url(#svgGlow)" />
+                    <circle cx="45" cy="435" r="5" fill="#BFF747" filter="url(#svgGlow)" />
+                    <circle cx="115" cy="600" r="5" fill="#2bdb89" filter="url(#svgGlow)" />
+                    <circle cx="45" cy="765" r="5" fill="#BFF747" filter="url(#svgGlow)" />
+                    <circle cx="115" cy="930" r="5" fill="#2bdb89" filter="url(#svgGlow)" />
+                </svg>
+
+                <!-- Tree Crown Top Node -->
+                <div class="tree-top-crown">
+                    <i class="fa-solid fa-seedling"></i>
+                </div>
+
+                <!-- 1. September 2026 – Present: Grownoww Technologies (Left Branch) -->
+                <div class="tree-branch-row branch-row-left wow fadeInLeft" data-wow-delay=".2s">
+                    <div class="curvy-arm"></div>
+                    <div class="tree-leaf-node active-sprout">
+                        <i class="fa-solid fa-leaf"></i>
                     </div>
-                    <div class="text">
-                        <ul class="list">
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Building responsive web pages that look good on all devices.</li>
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Creating scalable REST APIs and connecting them to database storage.</li>
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Working with team members in Tirunelveli to build requested features on time.</li>
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Testing website functions to ensure zero errors and smooth user experience.</li>
+                    <div class="tree-card">
+                        <div class="institute-banner">
+                            <img src="assets/institutes/institute_grownoww.jpg" alt="Grownoww Technologies" loading="lazy">
+                        </div>
+                        <span class="tree-leaf-pill"><i class="fa-solid fa-circle-dot text-success"></i> September 2026 – Present (Current)</span>
+                        <h3 class="tree-card-title">Developer</h3>
+                        <div class="tree-card-subtitle">
+                            <i class="fa-solid fa-building text-success"></i> Grownoww Technologies • Tirunelveli / India
+                        </div>
+                        <ul class="tree-points-list">
+                            <li>Building and maintaining responsive full stack web applications and backend systems.</li>
+                            <li>Developing Python backend microservices, REST APIs, and optimized PostgreSQL database queries.</li>
+                            <li>Collaborating on production feature deployments, code optimization, and data-driven client platforms.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="content-item wow fadeInUp" data-wow-delay=".4s">
-                    <div class="head">
-                        <h4><img src="assets/img/icon/32.svg" alt="icon"> Full Stack Web Development Intern — Revamp Technologies</h4>
-                        <span>Internship (Tamil Nadu)</span>
+
+                <!-- 2. April 2026 – August 2026: Revamp Technologies (Right Branch) -->
+                <div class="tree-branch-row branch-row-right wow fadeInRight" data-wow-delay=".3s">
+                    <div class="curvy-arm"></div>
+                    <div class="tree-leaf-node">
+                        <i class="fa-solid fa-leaf"></i>
                     </div>
-                    <div class="text">
-                        <ul class="list">
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Built web components using HTML, CSS, and JavaScript.</li>
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Connected frontend screens to secure REST API endpoints.</li>
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Learned Git workflows and collaborative team programming on GitHub.</li>
+                    <div class="tree-card">
+                        <div class="institute-banner">
+                            <img src="assets/institutes/institute_revamp.jpg" alt="Revamp Technologies" loading="lazy">
+                        </div>
+                        <span class="tree-leaf-pill badge-cyan"><i class="fa-solid fa-calendar-check"></i> April 2026 – August 2026 (5 Mos)</span>
+                        <h3 class="tree-card-title">Developer / Data Analyst Intern</h3>
+                        <div class="tree-card-subtitle">
+                            <i class="fa-solid fa-laptop-code text-info"></i> Revamp Technologies • Tamil Nadu, India
+                        </div>
+                        <ul class="tree-points-list">
+                            <li>Completed intensive 5-month industry internship in software engineering and data analytics.</li>
+                            <li>Engineered automated data preprocessing pipelines, ETL workflows, and interactive Power BI KPI dashboards.</li>
+                            <li>Participated in agile sprints, cross-functional code reviews, and software feature prototyping.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="content-item wow fadeInUp" data-wow-delay=".6s">
-                    <div class="head">
-                        <h4><img src="assets/img/icon/32.svg" alt="icon"> Master of Science (M.Sc.) in Data Analytics</h4>
-                        <span>Completed April 2026</span>
+
+                <!-- 3. 2024 – 2026: M.Sc. Data Analytics (Left Branch) -->
+                <div class="tree-branch-row branch-row-left wow fadeInLeft" data-wow-delay=".4s">
+                    <div class="curvy-arm"></div>
+                    <div class="tree-leaf-node">
+                        <i class="fa-solid fa-leaf"></i>
                     </div>
-                    <div class="text">
-                        <ul class="list">
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Studied data analytics, statistical methods, machine learning, and data visualization.</li>
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Practiced cleaning data, finding insights, and creating visual charts using Python.</li>
+                    <div class="tree-card">
+                        <div class="institute-banner">
+                            <img src="assets/institutes/institute_msu.jpg" alt="Manonmaniam Sundaranar University" loading="lazy">
+                        </div>
+                        <span class="tree-leaf-pill badge-purple"><i class="fa-solid fa-graduation-cap"></i> 2024 – 2026 • Post Graduation</span>
+                        <h3 class="tree-card-title">M.Sc. Data Analytics — 8.5 CGPA</h3>
+                        <div class="tree-card-subtitle">
+                            <i class="fa-solid fa-university text-warning"></i> Manonmaniam Sundaranar University, Tirunelveli (Distinction)
+                        </div>
+                        <ul class="tree-points-list">
+                            <li>Graduated with outstanding academic distinction (8.5 CGPA) in Data Analytics, NLP, ML, and Big Data.</li>
+                            <li>Authored and presented research paper: <em>"Next–Gen Resume Ranking Using BM25 & SBERT Embeddings"</em> at ICIRET 2026.</li>
+                            <li>Built applied ML systems: CNN Driver Fatigue Detection, DataTalk Voice Assistant, and Power BI electricity dashboards.</li>
+                            <li>Participated in Big Data Hadoop Tools and AI-Driven Programming national workshops.</li>
                         </ul>
                     </div>
                 </div>
-                <div class="content-item wow fadeInUp" data-wow-delay=".8s">
-                    <div class="head">
-                        <h4><img src="assets/img/icon/32.svg" alt="icon"> Bachelor of Science (B.Sc.) in Computer Science</h4>
-                        <span>Completed April 2024</span>
+
+                <!-- 4. 2021 – 2024: B.Sc. Computer Science (Right Branch) -->
+                <div class="tree-branch-row branch-row-right wow fadeInRight" data-wow-delay=".5s">
+                    <div class="curvy-arm"></div>
+                    <div class="tree-leaf-node">
+                        <i class="fa-solid fa-leaf"></i>
                     </div>
-                    <div class="text">
-                        <ul class="list">
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Studied computer programming, data structures, algorithms, databases, and web technology.</li>
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Built foundational knowledge in computer science and software development.</li>
+                    <div class="tree-card">
+                        <div class="institute-banner">
+                            <img src="assets/institutes/institute_mdt.jpg" alt="The MDT Hindu College" loading="lazy">
+                        </div>
+                        <span class="tree-leaf-pill badge-emerald"><i class="fa-solid fa-award"></i> 2021 – 2024 • Under Graduation</span>
+                        <h3 class="tree-card-title">B.Sc. Computer Science — 6.8 CGPA</h3>
+                        <div class="tree-card-subtitle">
+                            <i class="fa-solid fa-school text-primary"></i> The MDT Hindu College, Tirunelveli (First Class)
+                        </div>
+                        <ul class="tree-points-list">
+                            <li>Graduated with First Class in Bachelor of Science in Computer Science.</li>
+                            <li>Strong foundation in Python, Database Systems (PostgreSQL / SQL), Web Engineering (HTML/CSS/JS), and Data Structures.</li>
+                            <li>Actively participated in intra-collegiate computer science symposiums and technical coding competitions.</li>
                         </ul>
                     </div>
                 </div>
+
+                <!-- 5. 2019 – 2021: HSC (Left Branch) -->
+                <div class="tree-branch-row branch-row-left wow fadeInLeft" data-wow-delay=".6s">
+                    <div class="curvy-arm"></div>
+                    <div class="tree-leaf-node">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="tree-card">
+                        <div class="institute-banner">
+                            <img src="assets/institutes/institute_meenakshi.jpg" alt="Meenakshi Matriculation Higher Secondary School" loading="lazy">
+                        </div>
+                        <span class="tree-leaf-pill badge-amber"><i class="fa-solid fa-star"></i> 2019 – 2021 • Class XII (HSC)</span>
+                        <h3 class="tree-card-title">Higher Secondary Certificate (HSC) — 89.6%</h3>
+                        <div class="tree-card-subtitle">
+                            <i class="fa-solid fa-landmark text-secondary"></i> Meenakshi Matriculation Higher Secondary School, Tirunelveli
+                        </div>
+                        <ul class="tree-points-list">
+                            <li>Passed Class XII Board Examination with high distinction of 89.6%.</li>
+                            <li>Specialized coursework in Mathematics, Physics, Chemistry, and Computer Science.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- 6. 2019: SSLC (Right Branch) -->
+                <div class="tree-branch-row branch-row-right wow fadeInRight" data-wow-delay=".7s">
+                    <div class="curvy-arm"></div>
+                    <div class="tree-leaf-node">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <div class="tree-card">
+                        <div class="institute-banner">
+                            <img src="assets/institutes/institute_meenakshi.jpg" alt="Meenakshi Matriculation Higher Secondary School" loading="lazy">
+                        </div>
+                        <span class="tree-leaf-pill badge-cyan"><i class="fa-solid fa-certificate"></i> 2019 • Class X (SSLC)</span>
+                        <h3 class="tree-card-title">Secondary School Leaving Certificate (SSLC) — 84.2%</h3>
+                        <div class="tree-card-subtitle">
+                            <i class="fa-solid fa-landmark text-secondary"></i> Meenakshi Matriculation Higher Secondary School, Tirunelveli
+                        </div>
+                        <ul class="tree-points-list">
+                            <li>Passed Class X Board Examination with distinction of 84.2%.</li>
+                            <li>Developed strong fundamentals in Science, Mathematics, English, and Tamil.</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Tree Roots Bottom Node -->
+                <div class="tree-bottom-roots">
+                    <i class="fa-solid fa-spa"></i>
+                </div>
+
             </div>
         </div>
     </section>
@@ -477,7 +1069,7 @@
                                 <div class="icon mb-3">
                                     <i class="fa-solid fa-shield-check fa-2x" style="color: #BFF747;"></i>
                                 </div>
-                                <h4 class="text-white">Reliable Websites</h4>
+                                <h4 class="text-white">Reliable Web Solutions</h4>
                                 <p class="text-white-50">
                                     Building websites and web systems that run smoothly, load quickly, and maintain clear visual presentation across both mobile devices and desktops.
                                 </p>
@@ -499,7 +1091,7 @@
                                 <div class="icon mb-3">
                                     <i class="fa-solid fa-code-merge fa-2x" style="color: #BFF747;"></i>
                                 </div>
-                                <h4 class="text-white">Clean & Simple Code</h4>
+                                <h4 class="text-white">Clean & Scalable Code</h4>
                                 <p class="text-white-50">
                                     Writing modular, readable, and well-structured code that simplifies team collaboration and eases long-term maintenance and scaling.
                                 </p>
@@ -533,7 +1125,7 @@
                     <span>Connect:</span>
                     <a href="https://github.com/gomathinathan10" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="https://linkedin.com/in/gomathinathan-v" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto:gomathinathanv9@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="mailto:gomathinathanvgn@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                     <a href="tel:+916382988134"><i class="fa-solid fa-phone"></i></a>
                 </div>
             </div>
@@ -543,9 +1135,9 @@
                         <div class="single-footer-main-item">
                             <div class="single-footer-widget">
                                 <div class="footer-newsletter">
-                                    <h3>Let's Collaborate</h3>
+                                    <h3>Let's Connect</h3>
                                     <p>
-                                        Ready to create a responsive web product or analyze your business data? Let's connect.
+                                        To obtain a challenging position in a reputable organization where I can apply my knowledge and analytical skills for organizational growth.
                                     </p>
                                     <form action="contact.html">
                                         <div class="form-clt">
@@ -567,7 +1159,7 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About Me</a></li>
                                     <li><a href="certifications.html">Certifications</a></li>
-                                    <li><a href="news-classic.html">Articles</a></li>
+                                    <li><a href="portfolio.html">Projects</a></li>
                                     <li><a href="contact.html">Contact Me</a></li>
                                 </ul>
                             </div>
@@ -576,11 +1168,11 @@
                                     <h5>EXPERTISE</h5>
                                 </div>
                                 <ul class="footer-list-2">
-                                    <li><a href="about.html">React & Node.js</a></li>
-                                    <li><a href="about.html">Python & Pandas</a></li>
-                                    <li><a href="about.html">SQL & Databases</a></li>
-                                    <li><a href="about.html">REST API Design</a></li>
-                                    <li><a href="about.html">Performance Optimization</a></li>
+                                    <li><a href="about.html">Full Stack Development</a></li>
+                                    <li><a href="about.html">Data Analytics & ML</a></li>
+                                    <li><a href="about.html">BM25 & SBERT NLP</a></li>
+                                    <li><a href="about.html">CNN & OpenCV Vision</a></li>
+                                    <li><a href="about.html">Power BI Dashboards</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -593,8 +1185,8 @@
                                         <i class="fa-solid fa-location-dot"></i>
                                     </div>
                                     <div class="content">
-                                        <h5>Location</h5>
-                                        <h6>Tirunelveli, Tamil Nadu, India</h6>
+                                        <h5>Address</h5>
+                                        <h6>73, VVK Street, Pettai, Tirunelveli – 627004</h6>
                                     </div>
                                 </div>
                                 <div class="contact-items">
@@ -603,7 +1195,7 @@
                                     </div>
                                     <div class="content">
                                         <h5>Email</h5>
-                                        <h6><a href="mailto:gomathinathanv9@gmail.com">gomathinathanv9@gmail.com</a></h6>
+                                        <h6><a href="mailto:gomathinathanvgn@gmail.com">gomathinathanvgn@gmail.com</a></h6>
                                     </div>
                                 </div>
                                 <div class="contact-items mb-0">

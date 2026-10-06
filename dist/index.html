@@ -32,20 +32,54 @@
     <!--<< Main.css >>-->
     <link rel="stylesheet" href="assets/css/main.css">
     <style>
+        .hero-3 {
+            padding-top: 30px !important;
+            padding-bottom: 50px !important;
+        }
+        .hero-3 .hero-image {
+            position: relative;
+            z-index: 5;
+            display: inline-block;
+            margin-top: 0;
+        }
         .hero-img-custom {
+            position: relative;
+            z-index: 2;
             width: 100%;
-            max-width: 440px;
-            border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(0,0,0,0.5);
-            border: 2px solid rgba(191, 247, 71, 0.3);
-            object-fit: cover;
+            max-width: 430px;
+            height: auto;
+            object-fit: contain;
+            filter: drop-shadow(0 15px 30px rgba(0,0,0,0.75));
+            border-radius: 0 !important;
+            border: none !important;
+            outline: none !important;
+            box-shadow: none !important;
+        }
+        .hero-3 .hero-image .bg-shape {
+            position: absolute;
+            top: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+            width: 420px;
+            max-width: 92%;
+            height: auto;
+            pointer-events: none;
+        }
+        .hero-3 .hero-image .bg-shape img {
+            width: 100%;
+            height: auto;
+            object-fit: contain;
+            opacity: 0.95;
+            filter: drop-shadow(0 0 50px rgba(191, 247, 71, 0.35));
         }
         .about-avatar-custom {
             width: 100%;
-            max-width: 480px;
-            border-radius: 20px;
-            object-fit: cover;
-            border: 2px solid rgba(255,255,255,0.1);
+            max-width: 460px;
+            object-fit: contain;
+            filter: drop-shadow(0 20px 35px rgba(0,0,0,0.75));
+            border-radius: 0;
+            border: none;
         }
         .box-2.project-card-1 {
             background-image: url(/assets/project-observability.jpg) !important;
@@ -100,9 +134,6 @@
                 <span data-text-preloader="G" class="letters-loading">G</span>
                 <span data-text-preloader="O" class="letters-loading">O</span>
                 <span data-text-preloader="M" class="letters-loading">M</span>
-                <span data-text-preloader="A" class="letters-loading">A</span>
-                <span data-text-preloader="T" class="letters-loading">T</span>
-                <span data-text-preloader="H" class="letters-loading">H</span>
                 <span data-text-preloader="I" class="letters-loading">I</span>
             </div>
             <p class="text-center">PORTFOLIO LOADING</p>
@@ -152,7 +183,7 @@
                         </div>
                     </div>
                     <p class="text d-none d-xl-block">
-                        I am a Full Stack Developer & Aspiring Data Analyst based in Tirunelveli, Tamil Nadu. I develop fast, responsive web applications and build data dashboards to find valuable insights.
+                        I am Gomathinathan.V, pursuing M.Sc. in Data Analytics at Manonmaniam Sundaranar University. I develop web applications, build ML models & computer vision systems, and create insightful Power BI dashboards.
                     </p>
                     <div class="mobile-menu fix mb-3"></div>
                     <div class="offcanvas__contact">
@@ -163,7 +194,7 @@
                                     <i class="fal fa-map-marker-alt"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a target="_blank" href="#">Tirunelveli, Tamil Nadu, India</a>
+                                    <a target="_blank" href="#">73, VVK Street, Pettai, Tirunelveli – 627004</a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -171,7 +202,7 @@
                                     <i class="fal fa-envelope"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <a href="mailto:gomathinathanv9@gmail.com">gomathinathanv9@gmail.com</a>
+                                    <a href="mailto:gomathinathanvgn@gmail.com">gomathinathanvgn@gmail.com</a>
                                 </div>
                             </li>
                             <li class="d-flex align-items-center">
@@ -187,7 +218,7 @@
                                     <i class="fal fa-clock"></i>
                                 </div>
                                 <div class="offcanvas__contact-text">
-                                    <span>Available for Full-Time Roles & Projects</span>
+                                    <span>Available for Opportunities & Projects</span>
                                 </div>
                             </li>
                         </ul>
@@ -199,7 +230,7 @@
                         <div class="social-icon d-flex align-items-center mt-3">
                             <a href="https://github.com/gomathinathan10" target="_blank"><i class="fab fa-github"></i></a>
                             <a href="https://linkedin.com/in/gomathinathan-v" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                            <a href="mailto:gomathinathanv9@gmail.com"><i class="fas fa-envelope"></i></a>
+                            <a href="mailto:gomathinathanvgn@gmail.com"><i class="fas fa-envelope"></i></a>
                             <a href="tel:+916382988134"><i class="fas fa-phone"></i></a>
                         </div>
                     </div>
@@ -238,7 +269,7 @@
                                         <a href="certifications.html">Certifications</a>
                                     </li>
                                     <li>
-                                        <a href="news-classic.html">Articles</a>
+                                        <a href="portfolio.html">Projects</a>
                                     </li>
                                     <li>
                                         <a href="contact.html">Contact Me</a>
@@ -294,27 +325,27 @@
         <div class="hero-info">
             <a href="https://github.com/gomathinathan10" target="_blank" class="active">GitHub</a>
             <a href="https://linkedin.com/in/gomathinathan-v" target="_blank">LinkedIn</a>
-            <a href="mailto:gomathinathanv9@gmail.com">Email</a>
+            <a href="mailto:gomathinathanvgn@gmail.com">Email</a>
             <a href="tel:+916382988134">Phone</a>
         </div>
         <div class="container-fluid">
             <div class="row g-4 align-items-center">
                 <div class="col-lg-7">
                     <div class="hero-content-wrapper">
-                        <span class="wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">FULL STACK DEVELOPER & DATA ANALYST</span>
+                        <span class="wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">ASPIRING DATA ANALYST | M.SC. DATA ANALYTICS</span>
                         <h1 class="wow fadeInUp" data-wow-delay=".2s">
                             Hi, I'm Gomathinathan.V <br>
                             <span class="type-text"></span>
                         </h1>
                         <p class="wow fadeInUp" data-wow-delay=".3s">
-                            I build responsive web applications with React & Node.js, and analyze data using Python & SQL to uncover actionable insights. Currently developing client web solutions at Grownoww Technologies in Tirunelveli.
+                            Motivated and Postgraduated in M.Sc seeking a job to apply my knowledge of handling data, analytical skills, communication abilities and knowledge to support company projects. Eager to contribute to data driven insights and grow professionally while adding value to the organization.
                         </p>
                         <div class="d-flex flex-wrap gap-3 align-items-center">
                             <a href="contact.html" class="theme-btn wow fadeInUp" data-wow-delay=".4s">
-                                Hire Me Now <i class="fa-solid fa-arrow-right"></i>
+                                Contact Me <i class="fa-solid fa-arrow-right"></i>
                             </a>
-                            <a href="certifications.html" class="theme-btn style-2 wow fadeInUp" data-wow-delay=".5s">
-                                View Certifications <i class="fa-solid fa-award"></i>
+                            <a href="assets/resume.pdf" download class="theme-btn style-2 wow fadeInUp" data-wow-delay=".5s">
+                                Download Resume <i class="fa-sharp fa-regular fa-arrow-down-to-line"></i>
                             </a>
                         </div>
 
@@ -322,37 +353,37 @@
                         <div class="row g-3 mt-4 pt-2">
                             <div class="col-sm-6 col-md-3">
                                 <div class="counter-item">
-                                    <h3 class="text-white">Full Stack</h3>
-                                    <p class="text-white-50 small mb-0">React, Node & SQL</p>
+                                    <h3 class="text-white">8.5</h3>
+                                    <p class="text-white-50 small mb-0">CGPA (M.Sc. Data Analytics)</p>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-3">
                                 <div class="counter-item">
-                                    <h3 class="text-white">M.Sc.</h3>
-                                    <p class="text-white-50 small mb-0">Data Analytics (2026)</p>
+                                    <h3 class="text-white">6.8</h3>
+                                    <p class="text-white-50 small mb-0">CGPA (B.Sc. Comp Science)</p>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-3">
                                 <div class="counter-item">
-                                    <h3 class="text-white">Grownoww</h3>
-                                    <p class="text-white-50 small mb-0">Current Developer</p>
+                                    <h3 class="text-white">3+</h3>
+                                    <p class="text-white-50 small mb-0">Certifications (AI, ML & NLP)</p>
                                 </div>
                             </div>
                             <div class="col-sm-6 col-md-3">
                                 <div class="counter-item">
-                                    <h3 class="text-white">Revamp</h3>
-                                    <p class="text-white-50 small mb-0">Web Internship</p>
+                                    <h3 class="text-white">4+</h3>
+                                    <p class="text-white-50 small mb-0">Key Applied Projects</p>
                                 </div>
                             </div>
                         </div>
 
                     </div>
                 </div>
-                <div class="col-lg-5">
+                <div class="col-lg-5 text-center">
                     <div class="hero-image text-center position-relative">
-                        <img src="assets/gomathinathan.jpg" alt="Gomathinathan.V" class="hero-img-custom wow img-custom-anim-top" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                        <img src="assets/gomathinathan.png" alt="Gomathinathan.V" class="hero-img-custom wow img-custom-anim-top" data-wow-duration="1.3s" data-wow-delay="0.3s">
                         <div class="bg-shape">
-                            <img src="assets/img/hero/blur.png" alt="img" class="wow img-custom-anim-right" data-wow-duration="1.3s" data-wow-delay="0.3s">
+                            <img src="assets/img/hero/blur.png" alt="green shape" class="wow img-custom-anim-right" data-wow-duration="1.3s" data-wow-delay="0.3s">
                         </div>
                     </div>
                 </div>
@@ -416,7 +447,7 @@
                 <div class="row g-3 align-items-center justify-content-between">
                     <div class="col-lg-6">
                         <div class="about-images position-relative">
-                            <img src="assets/profile.jpg" alt="Gomathinathan" class="about-avatar-custom wow img-custom-anim-left" data-wow-delay=".3s">
+                            <img src="assets/profile.png" alt="Gomathinathan" class="about-avatar-custom wow img-custom-anim-left" data-wow-delay=".3s">
                             <div class="circle-image">
                                 <div class="text-image">
                                     <img src="assets/img/about/text.png" alt="img">
@@ -431,9 +462,9 @@
                         <div class="about-content">
                             <div class="section-title">
                                 <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">About Me</span>
-                                <h2 class="wow fadeInUp" data-wow-delay=".2s">Crafting Code & Solving Data Challenges</h2>
+                                <h2 class="wow fadeInUp" data-wow-delay=".2s">Turning Data into Actionable Insights</h2>
                                 <p class="wow fadeInUp" data-wow-delay=".3s">
-                                    I am a full stack developer and data analyst from Tirunelveli, Tamil Nadu. Currently, I work at Grownoww Technologies developing fast, reliable websites and web applications.
+                                    I am Gomathinathan.V, pursuing M.Sc. in Data Analytics (CGPA: 8.5) at Manonmaniam Sundaranar University, Tirunelveli, and graduated with B.Sc. in Computer Science (CGPA: 6.8) from The MDT Hindu College.
                                 </p>
                             </div>
                             <div class="text wow fadeInUp" data-wow-delay=".5s">
@@ -441,7 +472,7 @@
                                     <img src="assets/img/icon/36.svg" alt="icon">
                                 </div>
                                 <p>
-                                    I hold an M.Sc. in Data Analytics (April 2026) and a B.Sc. in Computer Science (April 2024), combining software engineering precision with deep statistical data insight.
+                                    Certified by Simplilearn in Machine Learning & AI for Business, and NPTEL in Natural Language Processing. Skilled in Python, PostgreSQL, PowerBI, BM25/SBERT NLP ranking, CNN/OpenCV vision systems, and automated data dashboards.
                                 </p>
                             </div>
                             <div class="items">
@@ -449,13 +480,13 @@
                                     <div class="icon">
                                         <img src="assets/img/icon/37.svg" alt="icon">
                                     </div>
-                                    <h6>Full-Stack Web Engineering</h6>
+                                    <h6>Machine Learning & NLP (SBERT/BM25)</h6>
                                 </div>
                                 <div class="item wow fadeInUp" data-wow-delay=".6s">
                                     <div class="icon">
                                         <img src="assets/img/icon/38.svg" alt="icon">
                                     </div>
-                                    <h6>Python & SQL Data Analytics</h6>
+                                    <h6>PowerBI & PostgreSQL Analytics</h6>
                                 </div>
                             </div>
                             <div class="about-btn">
@@ -464,7 +495,7 @@
                                 </a>
                                 <a href="assets/resume.pdf" download class="video-btn">
                                     <span class="icon"><i class="fa-solid fa-file-arrow-down"></i></span>
-                                    <span class="textx">View Resume</span>
+                                    <span class="textx">Download Resume</span>
                                 </a>
                             </div>
                         </div>
@@ -610,7 +641,7 @@
                     <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">FEATURED WORK</span>
                     <h2 class="wow fadeInUp" data-wow-delay=".2s">My Recent Working Projects</h2>
                 </div>
-                <a href="certifications.html" class="theme-btn">
+                <a href="portfolio.html" class="theme-btn">
                     View All Projects & Credentials
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
@@ -620,9 +651,9 @@
                     <div class="box-2 project-card-1 active wow fadeInUp">
                         <div class="project-content">
                             <div class="text">
-                                <span>Full-Stack Web App</span>
-                                <h4><a href="https://github.com/gomathinathan10" target="_blank">Company Web Application</a></h4>
-                                <p class="text-white-50 small mb-2">React.js, Node.js, Express, MongoDB</p>
+                                <span>NLP & Machine Learning</span>
+                                <h4><a href="https://github.com/gomathinathan10" target="_blank">Next–Gen Resume Ranking Using BM25 & SBERT</a></h4>
+                                <p class="text-white-50 small mb-2">BM25, SBERT Embeddings, Python, ML Scoring</p>
                             </div>
                             <a href="https://github.com/gomathinathan10" target="_blank" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                         </div>
@@ -630,9 +661,9 @@
                     <div class="box-2 project-card-2 wow fadeInUp" data-wow-delay=".2s">
                         <div class="project-content">
                             <div class="text">
-                                <span>Data Analytics</span>
-                                <h4><a href="https://github.com/gomathinathan10" target="_blank">Data Analytics Dashboard</a></h4>
-                                <p class="text-white-50 small mb-2">Python, Pandas, NumPy, SQL</p>
+                                <span>Computer Vision</span>
+                                <h4><a href="https://github.com/gomathinathan10" target="_blank">Driver Fatigue Detection System</a></h4>
+                                <p class="text-white-50 small mb-2">CNN, OpenCV, Python, Real-Time Alarm</p>
                             </div>
                             <a href="https://github.com/gomathinathan10" target="_blank" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                         </div>
@@ -640,9 +671,9 @@
                     <div class="box-2 project-card-3 wow fadeInUp" data-wow-delay=".4s">
                         <div class="project-content">
                             <div class="text">
-                                <span>Internship Project</span>
-                                <h4><a href="https://github.com/gomathinathan10" target="_blank">Client Information Portal</a></h4>
-                                <p class="text-white-50 small mb-2">JavaScript, React, REST APIs, Git</p>
+                                <span>Voice AI & Analytics</span>
+                                <h4><a href="https://github.com/gomathinathan10" target="_blank">DataTalk – Conversational Assistant</a></h4>
+                                <p class="text-white-50 small mb-2">Voice AI, Python, REST API Key, Analytics</p>
                             </div>
                             <a href="https://github.com/gomathinathan10" target="_blank" class="icon"><i class="fa-solid fa-arrow-right"></i></a>
                         </div>
@@ -665,61 +696,59 @@
             <div class="experience-main-wrapper">
                 <div class="content-item wow fadeInUp" data-wow-delay=".3s">
                     <div class="head">
-                        <h4><img src="assets/img/icon/32.svg" alt="icon"> Full Stack Developer — Grownoww Technologies</h4>
-                        <span>Present (Tirunelveli, Tamil Nadu)</span>
+                        <h4><img src="assets/img/icon/32.svg" alt="icon"> M.Sc. Data Analytics — CGPA: 8.5</h4>
+                        <span>2024 – 2026 (Manonmaniam Sundaranar University, Tirunelveli)</span>
                     </div>
                     <div class="text">
                         <ul class="list">
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Building responsive web applications with React.js, Node.js, and Express.</li>
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Developing secure REST APIs connected to database storage and ensuring reliable performance.</li>
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Collaborating with the team to deliver feature updates on time and maintaining clean, tested code.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Maintained outstanding academic performance (CGPA: 8.5) in Data Analytics, NLP, Machine Learning, and Big Data technologies.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Author & Presenter: Research paper on "Next–Gen Resume Ranking Using BM25 & SBERT Embeddings" at A.V.C. College of Engineering (2026).</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Participated in AI Industry-Oriented Training, Hadoop Big Data workshops, and PowerBI analytics masterclasses.</li>
                         </ul>
                         <div class="logo">
-                            <img src="assets/img/project/12.png" alt="Grownoww">
+                            <img src="assets/img/project/14.png" alt="MSU">
                         </div>
                     </div>
                 </div>
                 <div class="content-item wow fadeInUp" data-wow-delay=".5s">
                     <div class="head">
-                        <h4><img src="assets/img/icon/32.svg" alt="icon"> Web Development Intern — Revamp Technologies</h4>
-                        <span>Internship Period (Tamil Nadu)</span>
+                        <h4><img src="assets/img/icon/32.svg" alt="icon"> B.Sc. Computer Science — CGPA: 6.8</h4>
+                        <span>2021 – 2024 (The Madurai Diraviyam Thayumanavar Hindu College, Tirunelveli)</span>
                     </div>
                     <div class="text">
                         <ul class="list">
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Developed dynamic user interfaces using HTML, CSS, JavaScript, and React.</li>
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Connected frontend components to REST APIs and practiced Git version control workflows.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Completed core degree coursework with 6.8 CGPA covering Python programming, HTML/CSS, PostgreSQL, Data Structures, and Algorithms.</li>
                         </ul>
                         <div class="logo">
-                            <img src="assets/img/project/13.png" alt="Revamp">
+                            <img src="assets/img/project/13.png" alt="MDT Hindu College">
                         </div>
                     </div>
                 </div>
                 <div class="content-item wow fadeInUp" data-wow-delay=".7s">
                     <div class="head">
-                        <h4><img src="assets/img/icon/32.svg" alt="icon"> M.Sc. in Data Analytics</h4>
-                        <span>Completed April 2026 (Post Graduate)</span>
+                        <h4><img src="assets/img/icon/32.svg" alt="icon"> Higher Secondary Certificate (HSC) — 89.6%</h4>
+                        <span>2019 – 2021 (Meenakshi Matriculation Higher Secondary School, Tirunelveli)</span>
                     </div>
                     <div class="text">
                         <ul class="list">
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Specialized in exploratory data analysis, statistical modeling, machine learning basics, and visual dashboards.</li>
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Hands-on project work analyzing datasets with Python, Pandas, Matplotlib, and SQL.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Achieved distinction (89.6%) in Higher Secondary School education.</li>
                         </ul>
                         <div class="logo">
-                            <img src="assets/img/project/14.png" alt="Degree">
+                            <img src="assets/img/project/12.png" alt="School">
                         </div>
                     </div>
                 </div>
                 <div class="content-item wow fadeInUp" data-wow-delay=".9s">
                     <div class="head">
-                        <h4><img src="assets/img/icon/32.svg" alt="icon"> B.Sc. in Computer Science</h4>
-                        <span>Completed April 2024 (Undergraduate)</span>
+                        <h4><img src="assets/img/icon/32.svg" alt="icon"> Secondary School Leaving Certificate (SSLC) — 84.2%</h4>
+                        <span>2019 (Meenakshi Matriculation Higher Secondary School, Tirunelveli)</span>
                     </div>
                     <div class="text">
                         <ul class="list">
-                            <li><i class="fa-solid fa-circle-chevron-right"></i> Comprehensive foundation in computer algorithms, data structures, database design, and software engineering principles.</li>
+                            <li><i class="fa-solid fa-circle-chevron-right"></i> Completed SSLC with high distinction score of 84.2%.</li>
                         </ul>
                         <div class="logo">
-                            <img src="assets/img/project/12.png" alt="Degree">
+                            <img src="assets/img/project/12.png" alt="School">
                         </div>
                     </div>
                 </div>
@@ -789,8 +818,8 @@
                     <span class="style-3 wow fadeInUp"><img src="assets/img/icon/32.svg" alt="icon">TECH INSIGHTS</span>
                     <h2 class="wow fadeInUp" data-wow-delay=".2s">Recent Articles & Technical Write-ups</h2>
                 </div>
-                <a href="news-classic.html" class="theme-btn">
-                    View All Articles
+                <a href="portfolio.html" class="theme-btn">
+                    View All Projects
                     <i class="fa-solid fa-arrow-right"></i>
                 </a>
             </div>
@@ -852,7 +881,7 @@
                     <span>Connect:</span>
                     <a href="https://github.com/gomathinathan10" target="_blank"><i class="fa-brands fa-github"></i></a>
                     <a href="https://linkedin.com/in/gomathinathan-v" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="mailto:gomathinathanv9@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="mailto:gomathinathanvgn@gmail.com"><i class="fa-solid fa-envelope"></i></a>
                     <a href="tel:+916382988134"><i class="fa-solid fa-phone"></i></a>
                 </div>
             </div>
@@ -862,9 +891,9 @@
                         <div class="single-footer-main-item">
                             <div class="single-footer-widget">
                                 <div class="footer-newsletter">
-                                    <h3>Let's Collaborate</h3>
+                                    <h3>Let's Connect</h3>
                                     <p>
-                                        Looking for a developer to build your web product or an analyst to make sense of your data? Reach out today.
+                                        To obtain a challenging position in a reputable organization where I can apply my knowledge and analytical skills for organizational growth.
                                     </p>
                                     <form action="contact.html">
                                         <div class="form-clt">
@@ -888,7 +917,7 @@
                                     <li><a href="index.html">Home</a></li>
                                     <li><a href="about.html">About Me</a></li>
                                     <li><a href="certifications.html">Certifications</a></li>
-                                    <li><a href="news-classic.html">Articles</a></li>
+                                    <li><a href="portfolio.html">Projects</a></li>
                                     <li><a href="contact.html">Contact Me</a></li>
                                 </ul>
                             </div>
@@ -897,11 +926,11 @@
                                     <h5>EXPERTISE</h5>
                                 </div>
                                 <ul class="footer-list-2">
-                                    <li><a href="about.html">React & Node.js</a></li>
-                                    <li><a href="about.html">Python & Pandas</a></li>
-                                    <li><a href="about.html">SQL & Databases</a></li>
-                                    <li><a href="about.html">REST API Design</a></li>
-                                    <li><a href="about.html">Performance Optimization</a></li>
+                                    <li><a href="about.html">Data Analytics & ML</a></li>
+                                    <li><a href="about.html">BM25 & SBERT NLP</a></li>
+                                    <li><a href="about.html">CNN & OpenCV Vision</a></li>
+                                    <li><a href="about.html">Power BI Dashboards</a></li>
+                                    <li><a href="about.html">HTML, CSS, JS & Python</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -914,8 +943,8 @@
                                         <i class="fa-solid fa-location-dot"></i>
                                     </div>
                                     <div class="content">
-                                        <h5>Location</h5>
-                                        <h6>Tirunelveli, Tamil Nadu, India</h6>
+                                        <h5>Address</h5>
+                                        <h6>73, VVK Street, Pettai, Tirunelveli – 627004</h6>
                                     </div>
                                 </div>
                                 <div class="contact-items">
@@ -925,7 +954,7 @@
                                     <div class="content">
                                         <h5>Email</h5>
                                         <h6>
-                                            <a href="mailto:gomathinathanv9@gmail.com">gomathinathanv9@gmail.com</a>
+                                            <a href="mailto:gomathinathanvgn@gmail.com">gomathinathanvgn@gmail.com</a>
                                         </h6>
                                     </div>
                                 </div>
