@@ -42,9 +42,9 @@ export const portfolioData = {
         helper: "Simplilearn (ML & AI) & NPTEL (NLP)"
       },
       {
-        value: "4+",
+        value: "11+",
         label: "Key Projects",
-        helper: "ML, NLP, Computer Vision & Power BI"
+        helper: "ML, NLP, Computer Vision, Web, CRM & Power BI"
       }
     ]
   },
@@ -313,16 +313,33 @@ export const portfolioData = {
   // ===========================================================================
   projects: {
     sectionTitle: "Projects",
-    sectionSubtitle: "Featured technical projects across Machine Learning, Computer Vision, Voice AI, and Power BI.",
-    categories: ["All", "Machine Learning", "Data Analytics", "AI & Vision"],
+    sectionSubtitle: "Featured technical projects across Machine Learning, Computer Vision, Voice AI, Power BI, Web Applications, CRM, and E-Commerce.",
+    categories: ["All", "AI & Machine Learning", "Data Analytics & BI", "Web Apps & CRM", "E-Commerce & Portals"],
     items: [
       {
-        id: "resume-ranking",
-        title: "Next–Gen Resume Ranking Using BM25 & SBERT Embeddings",
-        category: "Machine Learning",
+        id: "datatalk-bot",
+        title: "DataTalk – Conversational Analytics Assistant",
+        category: "AI & Machine Learning",
+        badge: "Voice AI & Analytics",
+        image: "assets/img/project/03.png",
+        description: "A voice-enabled conversational AI chatbot for data analytics queries connecting with secure API keys, translating natural spoken language into analytical SQL queries and spoken summary responses.",
+        keyImpact: "Hands-free voice querying of datasets, translating speech into analytical SQL queries and spoken summary responses.",
+        techStack: ["Python", "Voice AI", "REST API", "PostgreSQL", "NLP", "Data Analytics"],
+        liveUrl: "https://github.com/gomathinathan10",
+        githubUrl: "https://github.com/gomathinathan10",
+        details: [
+          "Engineered voice-to-text recognition and text-to-speech audio synthesis.",
+          "Connected to backend APIs with API key authentication for dynamic query execution.",
+          "Parsed complex data queries and formatted intuitive conversational analytics."
+        ]
+      },
+      {
+        id: "smart-resume-ranking",
+        title: "Smart Resume Ranking System",
+        category: "AI & Machine Learning",
         badge: "NLP & ML",
-        image: "./assets/project-observability.jpg",
-        description: "Automatically analyze and rank Resumes according to job description, calculating scores using ML models, combining BM25 keyword matching with SBERT deep contextual embeddings.",
+        image: "assets/img/project/01.png",
+        description: "Intelligent automated resume parsing and scoring system combining BM25 lexical keyword matching with SBERT deep contextual embeddings to rank candidate resumes against job descriptions.",
         keyImpact: "Presented as a research paper at A.V.C. College of Engineering, Mayiladuthurai (2026).",
         techStack: ["Python", "BM25", "SBERT Embeddings", "NLP", "Machine Learning", "Scikit-Learn"],
         liveUrl: "https://github.com/gomathinathan10",
@@ -335,11 +352,11 @@ export const portfolioData = {
       },
       {
         id: "driver-fatigue",
-        title: "Driver Fatigue Detection System",
-        category: "AI & Vision",
+        title: "Driver Fatigue System",
+        category: "AI & Machine Learning",
         badge: "Computer Vision",
-        image: "./assets/project-developer-platform.jpg",
-        description: "Vision based fatigue detection and alarm system using Convolutional Neural Networks (CNN) and OpenCV to monitor driver drowsiness and trigger real-time alerts.",
+        image: "assets/img/project/02.png",
+        description: "Vision-based fatigue detection and real-time alarm system using Convolutional Neural Networks (CNN) and OpenCV to monitor driver drowsiness, eye aspect ratio, and head posture.",
         keyImpact: "Real-time webcam stream processing detecting eye closure duration and head tilt to trigger instant acoustic alarms.",
         techStack: ["Python", "CNN", "OpenCV", "Deep Learning", "Computer Vision", "Real-Time Detection"],
         liveUrl: "https://github.com/gomathinathan10",
@@ -351,29 +368,12 @@ export const portfolioData = {
         ]
       },
       {
-        id: "datatalk-bot",
-        title: "DataTalk – Conversational Analytical Assistant",
-        category: "Machine Learning",
-        badge: "Voice AI",
-        image: "./assets/project-fintech.jpg",
-        description: "A voice conversational chatbot for Data Analytical Queries connecting with API key, providing conversational natural language access to complex dataset metrics.",
-        keyImpact: "Hands-free voice querying of datasets, translating speech into analytical SQL queries and spoken summary responses.",
-        techStack: ["Python", "Voice AI", "REST API", "PostgreSQL", "NLP", "Data Analytics"],
-        liveUrl: "https://github.com/gomathinathan10",
-        githubUrl: "https://github.com/gomathinathan10",
-        details: [
-          "Engineered voice-to-text recognition and text-to-speech audio synthesis.",
-          "Connected to backend APIs with API key authentication for dynamic query execution.",
-          "Parsed complex data queries and formatted intuitive conversational analytics."
-        ]
-      },
-      {
         id: "electricity-consumption",
-        title: "Analysis of Commercial Electricity Consumption in Indian State",
-        category: "Data Analytics",
-        badge: "Power BI",
-        image: "./assets/project-fintech.jpg",
-        description: "Dashboard Visualisation of Electricity Consumption using Powerbi, analyzing commercial sector consumption patterns, peak demands, and geographical distributions across an Indian state.",
+        title: "PowerBI Analysis of Electricity Consumption in India",
+        category: "Data Analytics & BI",
+        badge: "Power BI & Analytics",
+        image: "assets/img/project/04.png",
+        description: "Interactive Power BI business intelligence dashboard analyzing commercial electricity consumption patterns, seasonal peak demands, state-wise trends, and energy load forecasting across India.",
         keyImpact: "Interactive dashboards with multi-level drill-down capabilities, KPI metrics, and energy demand forecasting.",
         techStack: ["PowerBI", "Data Analytics", "Dashboard Visualization", "DAX", "Data Modeling"],
         liveUrl: "https://github.com/gomathinathan10",
@@ -382,6 +382,125 @@ export const portfolioData = {
           "Modeled commercial power consumption data across diverse Indian state regions.",
           "Created interactive Power BI dashboards with DAX calculations and visual slicers.",
           "Identified seasonal peaks and demand variance to assist power grid planning."
+        ]
+      },
+      {
+        id: "grownoww",
+        title: "GrowNoww",
+        category: "Web Apps & CRM",
+        badge: "Digital Web Platform",
+        image: "assets/img/project/05.png",
+        description: "Modern digital acceleration and agency web platform featuring responsive dynamic UI/UX layouts, business service catalog, and lead conversion workflows.",
+        keyImpact: "Optimized web architecture with rapid page speeds, interactive components, and lead generation funnels.",
+        techStack: ["JavaScript", "HTML5", "CSS3", "Python", "REST APIs", "Responsive Design"],
+        liveUrl: "https://github.com/gomathinathan10",
+        githubUrl: "https://github.com/gomathinathan10",
+        details: [
+          "Built high-performance responsive web pages with custom CSS animations and clean modern UI.",
+          "Implemented interactive inquiry forms and service showcase modules.",
+          "Structured modular codebase for rapid scalability and client feature additions."
+        ]
+      },
+      {
+        id: "vibenoww",
+        title: "VibeNoww",
+        category: "Web Apps & CRM",
+        badge: "Interactive Web App",
+        image: "assets/img/project/06.png",
+        description: "Engaging lifestyle, music, and community web application engineered with vibrant modern aesthetics, audio-visual interactive modules, and dynamic user feeds.",
+        keyImpact: "Engaging user interface with smooth transitions, interactive media controls, and lightweight client state management.",
+        techStack: ["JavaScript", "HTML5/CSS3", "Node.js", "REST APIs", "Modern UI/UX"],
+        liveUrl: "https://github.com/gomathinathan10",
+        githubUrl: "https://github.com/gomathinathan10",
+        details: [
+          "Developed rich glassmorphism UI components with dynamic light and dark theme accents.",
+          "Built reactive frontend components with smooth micro-interactions and transitions.",
+          "Integrated API endpoints for multimedia feed curation and dynamic content rendering."
+        ]
+      },
+      {
+        id: "yg-asafoetida",
+        title: "YG - Asafoetida",
+        category: "E-Commerce & Portals",
+        badge: "Brand & Showcase Portal",
+        image: "assets/img/project/01.png",
+        description: "Digital brand portal and product showcase website for premium YG Asafoetida spices, featuring product grade catalogs, quality certifications, and direct inquiry integration.",
+        keyImpact: "Elevated regional brand presence with mobile-first web layout, product catalog, and direct customer inquiry channels.",
+        techStack: ["HTML5", "CSS3", "JavaScript", "SEO Optimization", "Responsive UI"],
+        liveUrl: "https://github.com/gomathinathan10",
+        githubUrl: "https://github.com/gomathinathan10",
+        details: [
+          "Designed clean, brand-aligned visual identity showcasing product varieties and heritage.",
+          "Implemented interactive product gallery, customer inquiry system, and distributor contact flow.",
+          "Applied full SEO best practices and fast-loading asset optimizations."
+        ]
+      },
+      {
+        id: "charithra-online",
+        title: "Charithra Online",
+        category: "Web Apps & CRM",
+        badge: "Digital Content Portal",
+        image: "assets/img/project/02.png",
+        description: "Dynamic digital portal and online content hub featuring categorized article archives, multimedia integration, responsive reading modes, and administrative content tools.",
+        keyImpact: "Seamless reading and browsing experience with categorized content search and high mobile responsiveness.",
+        techStack: ["JavaScript", "Python", "PostgreSQL", "HTML5/CSS3", "Content Management"],
+        liveUrl: "https://github.com/gomathinathan10",
+        githubUrl: "https://github.com/gomathinathan10",
+        details: [
+          "Engineered category filtering and dynamic search for extensive digital archives.",
+          "Integrated relational database backend for reliable content querying and storage.",
+          "Designed accessible, mobile-first typography and reader-friendly layout."
+        ]
+      },
+      {
+        id: "smk-driving-school",
+        title: "SMK Driving School Web & CRM",
+        category: "Web Apps & CRM",
+        badge: "CRM & Academy Portal",
+        image: "assets/img/project/03.png",
+        description: "Complete driving academy portal and administrative CRM system to manage student admissions, instructor schedules, training slot booking, fee tracking, and RTO test records.",
+        keyImpact: "Streamlined driving school operations, eliminated paper records, and automated student progress and test tracking.",
+        techStack: ["Python", "PostgreSQL", "JavaScript", "CRM System", "Bootstrap", "REST API"],
+        liveUrl: "https://github.com/gomathinathan10",
+        githubUrl: "https://github.com/gomathinathan10",
+        details: [
+          "Engineered custom CRM dashboard with role-based access for instructors and administrators.",
+          "Built slot booking system and automated timetable management for driving sessions.",
+          "Implemented fee payment status tracking, student documentation, and RTO test scheduling."
+        ]
+      },
+      {
+        id: "shanmuga-steels",
+        title: "Shanmuga Steels",
+        category: "E-Commerce & Portals",
+        badge: "Industrial B2B Portal",
+        image: "assets/img/project/04.png",
+        description: "Comprehensive industrial web portal for steel manufacturing and trading enterprise, featuring real-time product specification sheets, material calculators, and RFQ quotation requests.",
+        keyImpact: "Modernized industrial sales pipeline with online product catalog, dimension calculators, and instant quote submission.",
+        techStack: ["HTML5", "CSS3", "JavaScript", "PostgreSQL", "UI/UX", "B2B Solutions"],
+        liveUrl: "https://github.com/gomathinathan10",
+        githubUrl: "https://github.com/gomathinathan10",
+        details: [
+          "Developed categorized steel product catalog with technical dimension specs and tonnage charts.",
+          "Created client-side material weight and pricing calculation tools.",
+          "Built automated quotation request pipeline connecting clients with sales engineers."
+        ]
+      },
+      {
+        id: "agricart-ecommerce",
+        title: "AgriCart – E-commerce Website",
+        category: "E-Commerce & Portals",
+        badge: "E-Commerce Platform",
+        image: "assets/img/project/05.png",
+        description: "Full-featured agricultural e-commerce platform connecting farmers directly to consumers, featuring product filtering, cart management, checkout workflows, and order tracking.",
+        keyImpact: "Empowered agricultural commerce with seamless browsing, categorized farm produce, and streamlined order placement.",
+        techStack: ["JavaScript", "Python", "PostgreSQL", "REST APIs", "E-Commerce", "CSS3"],
+        liveUrl: "https://github.com/gomathinathan10",
+        githubUrl: "https://github.com/gomathinathan10",
+        details: [
+          "Engineered dynamic shopping cart, product search with multi-category filters, and checkout flow.",
+          "Designed responsive product cards with pricing units, stock status, and customer reviews.",
+          "Integrated database schema for orders, inventories, customer profiles, and transaction records."
         ]
       }
     ]
